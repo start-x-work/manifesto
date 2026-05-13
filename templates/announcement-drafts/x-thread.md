@@ -1,8 +1,4 @@
-# X（人格1）スレッド案 — 7〜8 ツイート
-
-**ルール:** ハッシュタグ不使用。リンクは最終ツイートに集約可。
-
----
+# Xスレッド — 7〜8 ツイート
 
 **1/**  
 本日、Start-X は Marketing-OS 関連のオープンソース活動を GitHub Organization 上で公開した。思想は Manifesto に集約している。  
@@ -29,4 +25,4 @@ https://github.com/start-x-work/manifesto/discussions/1
 
 **8/**  
 長文の背景と業界観は note に書いた。読み物としてまとめているので、そちらもあわせてどうぞ。  
-（note 公開後に URL を差し込む）
+(https://note.com/yamaguchi_take/n/n995fd02a099b)
