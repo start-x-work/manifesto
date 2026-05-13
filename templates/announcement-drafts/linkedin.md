@@ -54,7 +54,3 @@ If you are building internal glue code around LLMs and search data, consider pub
 Finally, if you are comparing this program to a fully hosted SaaS-only roadmap, expect different trade-offs. We bias toward **inspectable scripts** and **documented boundaries** over magic dashboards. That is less flashy on day one, but it ages better when your stack changes underneath you.
 
 We also welcome **cross-border collaboration** on documentation: if a paragraph in the Manifesto reads awkward in English, propose a PR that keeps the intent but improves the rhythm. Small copy edits are a legitimate form of contribution.
-
----
-
-（Word count はおおむね 800〜1,200 語レンジを目指して拡張済み。公開前に固有名詞とリンクの最終確認をすること。）
