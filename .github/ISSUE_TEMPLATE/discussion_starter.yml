@@ -1,0 +1,21 @@
+name: 💬 Discussion starter / 議論のたたき台
+description: Propose a topic for community discussion / コミュニティ議論のトピックを提案
+labels: ["discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        一般的な質問は [Organization Discussions](https://github.com/orgs/start-x-work/discussions) もご利用ください。
+        For general questions, see [Organization Discussions](https://github.com/orgs/start-x-work/discussions).
+  - type: textarea
+    id: topic
+    attributes:
+      label: Topic / トピック
+      description: What do you want to discuss? / 何について議論したいですか?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / 背景
+      description: Links, references, or prior reading / リンク・参照・前提となる読み物
