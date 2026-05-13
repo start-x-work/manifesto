@@ -8,7 +8,8 @@ Marketing-OS は、マーケティングの意思決定構造を業界に開く�
 Marketing-OS is opening its decision-making structure to the industry.
 This repository serves as the conceptual hub of that effort.
 
-**公開予定: 2026年5月31日 / Public release: May 31, 2026**
+リポジトリは **Public** です。Manifesto 本文の完成目安は **2026年5月31日** です。  
+This repository is **public**. Target for the full Manifesto text: **May 31, 2026**.
 
 ---
 
