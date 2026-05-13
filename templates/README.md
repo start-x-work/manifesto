@@ -1,5 +1,5 @@
 # templates / テンプレート
 
-このディレクトリは、Manifesto や公開ドキュメント用の再利用テンプレート置き場として予約している。
+Issue テンプレートや公開ドキュメントのひな形を置く場所として予約している。現時点の中心はリポジトリルートの [README.md](../README.md) と [editor.md](../editor.md)、[licenses.md](../licenses.md) である。
 
-This directory is reserved for reusable templates used by the manifesto and public docs.
+This folder is reserved for reusable templates. The canonical texts currently live in the repository root: [README.md](../README.md), [editor.md](../editor.md), and [licenses.md](../licenses.md).
