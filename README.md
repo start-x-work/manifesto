@@ -149,6 +149,7 @@ For contracts, pricing, and tailored support for commercial Marketing-OS, please
 
 - **実施記録・チェックリスト:** [templates/setup-history-v2.md](./templates/setup-history-v2.md)  
 - **付録A（事前判断の記録）:** [templates/appendix-a-decisions.md](./templates/appendix-a-decisions.md)  
+- **付録D（メトリクス記録）:** [templates/metrics.md](./templates/metrics.md)  
 - **付録E（公開アナウンス下書き）:** [templates/announcement-drafts/](./templates/announcement-drafts/)  
 - **コミット署名（付録A-8）:** [templates/gpg-commit-signing.md](./templates/gpg-commit-signing.md)
 
