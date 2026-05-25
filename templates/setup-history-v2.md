@@ -24,12 +24,11 @@
 | Org の **2FA 必須**（指示書 2-1） | GitHub API で `two_factor_requirement_enabled=true` を適用したが、確認値は `false` のまま。Organization owner の `admin:org` 権限・アカウント2FA・ブラウザ確認が必要 |
 | メンバー権限デフォルト（Read / Private repo 作成制限） | API 確認済み。`default_repository_permission=read`、repo 作成は `none`（この Org では private-only が許可されず、より厳格に public/private とも作成不可へ設定） |
 | **付録E** 各媒体の**公開ボタン**（note / X / Threads / theLetter / Facebook / LinkedIn） | ユーザー報告により公開済み。下書きは [announcement-drafts/](./announcement-drafts/) |
-| 初週 **Star** 50 目標 | `gh repo star start-x-work/<name>` または UI |
-| **MRR ¥500k** 本体への影響 | 経営判断（指示書 5-1 必須） |
+| 初期反応の記録 | [metrics.md](./metrics.md) に観測値として記録 |
 
 ## 付録D（メトリクス・撤退線）
 
-数値目安と Soft/Hard 停止条件は指示書 **付録D** の表を正とする。初回値と週次記録は [metrics.md](./metrics.md) に残す。
+具体的な判断閾値は公開リポジトリでは扱わない。初回値と週次記録は [metrics.md](./metrics.md) に観測ログとして残す。
 
 ## 指示書 §12（完了後の確認）
 

@@ -2,18 +2,15 @@
 
 ## トラッキング対象
 
-| 指標 | Phase 1完了目標（6/30） | Phase 3完了目標（8/31） |
-|---|---:|---:|
-| Star数（manifesto） | 50以上 | 500以上 |
-| note記事 月間PV | 5,000以上 | - |
-| Issue / Discussion | 1件以上 | - |
-| Marketing-OS リード経由 | - | 5件以上 |
-| npm download（月間） | - | 100以上 |
+公開リポジトリでは観測値のみを記録する。具体的な目標値・撤退閾値は非公開の運用メモで管理する。
 
-## 撤退判断ライン
-
-- Soft Reset: 3ヶ月後（8/31）で Star 100未満 → 運用縮小
-- Hard Stop: 6ヶ月後（11/30）で Star 100未満 → 戦略再検討
+| 指標 | 用途 |
+|---|---|
+| Star数（manifesto） | 関心の推移 |
+| fork / watcher | 再利用・継続関心の推移 |
+| Issue / Discussion | 参加・質問の有無 |
+| note記事 PV | 公開アナウンスの到達確認 |
+| npm download（月間） | Phase 3 以降の CLI 利用状況 |
 
 ## 記録ログ
 

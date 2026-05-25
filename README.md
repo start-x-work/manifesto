@@ -113,17 +113,17 @@ Transparency: publish the roadmap and explain changes whenever feasible. For suc
 
 粗い位相は次のとおりである。Phase 1（2026 年 5 月）は OSS 基盤と Manifesto の公開。Phase 2（6 月）は商用 Marketing-OS 本体への集中で、OSS は最小限のメンテナンスに留める。Phase 3（7–8 月）は SEO 編 v0.1 CLI。Phase 4（9–10 月）は Web UI。Phase 5（2026 年 Q4）は広告編 Manifest の詳細化と SEO v1.0 準備。Phase 6（2027 年 Q1）は広告編 v0.1 の着手である。
 
-日程は前提であり、変更されうる。本体の MRR 目標未達など、優先順位が入れ替わる場合は、OSS 側の着手を遅らせることがある。判断はロードマップ上で明示する。
+日程は前提であり、変更されうる。優先順位が入れ替わる場合は、OSS 側の着手を遅らせることがある。判断はロードマップ上で明示する。
 
-成果と撤退に関する数値目安は、別紙の運用基準に記す（Phase 完了時点での星取り、記事 PV、Issue／Discussion の有無など）。ここでは、定期的に読み直し、必要なら Manifesto 本文を微修正するプロセスだけを約束する。
+成果と撤退に関する判断基準は、別紙の運用基準に記す。ここでは、定期的に読み直し、必要なら Manifesto 本文を微修正するプロセスだけを約束する。
 
 ## 5. Roadmap
 
 At a high level: Phase 1 (May 2026) ships the OSS foundation and this Manifesto. Phase 2 (June) focuses on commercial Marketing-OS; OSS activity stays minimal. Phase 3 (Jul–Aug) targets the SEO v0.1 CLI. Phase 4 (Sep–Oct) adds a web UI. Phase 5 (Q4 2026) deepens the Ads manifest and prepares SEO v1.0. Phase 6 (Q1 2027) begins Ads v0.1 implementation.
 
-Dates are assumptions and may move. If priorities shift—for example if core MRR goals slip—we may delay OSS starts. We will state such shifts on the roadmap itself.
+Dates are assumptions and may move. If priorities shift, we may delay OSS starts. We will state such shifts on the roadmap itself.
 
-Numeric success and retreat lines live in operational documentation (stars, article views, issues/discussions, and later npm downloads). Here we only commit to periodic review and small Manifesto edits when feedback warrants them.
+Success and retreat criteria live in operational documentation. Here we only commit to periodic review and small Manifesto edits when feedback warrants them.
 
 ---
 
