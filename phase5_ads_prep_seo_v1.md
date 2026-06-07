@@ -364,7 +364,7 @@ B5(Manifesto更新)・B6(再利用設計)は私の判断確定後に。
 
 ## 7. Phase 6 への接続
 
-Gate D 通過後、Phase 6(広告編 v0.1実装)へ。実装指示書は `phase6_ads_impl_v1.md`(別ファイル)。
+Gate D 通過後、Phase 6(広告編 v0.1実装)へ。実装指示書は [`phase6_ads_impl_v1.md`](./phase6_ads_impl_v1.md)(別ファイル)。
 
 ---
 

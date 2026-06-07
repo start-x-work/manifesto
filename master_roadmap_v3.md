@@ -23,7 +23,7 @@
 | `phase3_seo_cli_finalize_v1.md` | Phase 3 仕上げ | 進行中 |
 | `phase4_seo_web_impl_v1.md` | Phase 4(Web UI) | 待機 |
 | [`phase5_ads_prep_seo_v1.md`](./phase5_ads_prep_seo_v1.md) | Phase 5(広告準備+SEO v1.0) | 待機 |
-| `phase6_ads_impl_v1.md` | Phase 6(広告 v0.1) | 待機 |
+| [`phase6_ads_impl_v1.md`](./phase6_ads_impl_v1.md) | Phase 6(広告 v0.1) | 待機 |
 | **`master_roadmap_v3.md`(本書)** | 全体索引・進捗 | — |
 
 ---
@@ -81,7 +81,7 @@
 | Sprint N+1 | Phase 4 Web UI | Phase 3完了後 | phase4_web |
 | Sprint N+2 | Phase 5 系統A(SEO v1.0) | Phase 4と並行可 | [phase5](./phase5_ads_prep_seo_v1.md) |
 | Sprint N+2 | Phase 5 系統B(広告準備) | Phase 4と並行可 | [phase5](./phase5_ads_prep_seo_v1.md) |
-| Sprint N+3 | Phase 6(広告 v0.1) | Gate D後 | phase6 |
+| Sprint N+3 | Phase 6(広告 v0.1) | Gate D後 | [phase6](./phase6_ads_impl_v1.md) |
 
 ### 並行実行の指針
 
@@ -119,7 +119,7 @@ npx @start-x-work/mos-seo audit site https://example.com   # 外部確認
 1. **Phase 4(Web UI)着手** — `phase4_seo_web_impl_v1.md`
 2. **Phase 5系統B(広告調査)を並行開始** — [`phase5_ads_prep_seo_v1.md`](./phase5_ads_prep_seo_v1.md) の B1〜B4
 3. **Phase 4完了後、Phase 5系統A(SEO v1.0)** — A1〜A6
-4. **Gate D通過後、Phase 6(広告実装)** — `phase6_ads_impl_v1.md`
+4. **Gate D通過後、Phase 6(広告実装)** — [`phase6_ads_impl_v1.md`](./phase6_ads_impl_v1.md)
 
 ---
 
@@ -199,7 +199,7 @@ npx @start-x-work/mos-seo audit site https://example.com   # 外部確認
 | Phase 3公開 | phase3_finalize | Section 7のプロンプト |
 | Phase 4実装 | phase4_web | Section 9のプロンプト |
 | Phase 5実装 | [phase5](./phase5_ads_prep_seo_v1.md) | Section 6のプロンプト |
-| Phase 6実装 | phase6 | Section 7のプロンプト |
+| Phase 6実装 | [phase6](./phase6_ads_impl_v1.md) | Section 7のプロンプト |
 
 各指示書は独立して Cursor Agent に渡せる。本書(master)は全体の進捗管理用。
 
