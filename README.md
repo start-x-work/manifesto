@@ -17,7 +17,7 @@ Marketing-OS is a project to open marketing’s decision-making structure to the
 5. [ロードマップ](#5-ロードマップ) / [Roadmap](#5-roadmap)
 6. [参加方法](#6-参加方法) / [How to Contribute](#6-how-to-contribute)
 
-関連文書: [editor.md](./editor.md)（編集者性と OSS の接続）・[licenses.md](./licenses.md)（ライセンス選定の理由）
+関連文書: [editor.md](./editor.md)（編集者性と OSS の接続）・[licenses.md](./licenses.md)（ライセンス選定の理由）・[master_roadmap_v3.md](./master_roadmap_v3.md)（OSS 全体ロードマップ）
 
 ---
 
@@ -111,17 +111,17 @@ Transparency: publish the roadmap and explain changes whenever feasible. For suc
 
 ## 5. ロードマップ
 
-粗い位相は次のとおりである。Phase 1（2026 年 5 月）は OSS 基盤と Manifesto の公開。Phase 2（6 月）は商用 Marketing-OS 本体への集中で、OSS は最小限のメンテナンスに留める。Phase 3（7–8 月）は SEO 編 v0.1 CLI。Phase 4（9–10 月）は Web UI。Phase 5（2026 年 Q4）は広告編 Manifest の詳細化と SEO v1.0 準備。Phase 6（2027 年 Q1）は広告編 v0.1 の着手である。
+粗い位相は [Start-X OSS マスターロードマップ v3.0](./master_roadmap_v3.md) で管理する。Phase 1 は完了、Phase 2 は実質完了、Phase 3 は SEO CLI のコード完了・公開作業中である。以降は Phase 4（SEO Web UI）、Phase 5（広告準備 + SEO v1.0）、Phase 6（広告 v0.1）へ進む。
 
-日程は前提であり、変更されうる。優先順位が入れ替わる場合は、OSS 側の着手を遅らせることがある。判断はロードマップ上で明示する。
+月固定のスケジュールではなく、Gate（完成度）で進行を判断する。優先順位が入れ替わる場合は、ロードマップ上で理由を明示する。
 
 成果と撤退に関する判断基準は、別紙の運用基準に記す。ここでは、定期的に読み直し、必要なら Manifesto 本文を微修正するプロセスだけを約束する。
 
 ## 5. Roadmap
 
-At a high level: Phase 1 (May 2026) ships the OSS foundation and this Manifesto. Phase 2 (June) focuses on commercial Marketing-OS; OSS activity stays minimal. Phase 3 (Jul–Aug) targets the SEO v0.1 CLI. Phase 4 (Sep–Oct) adds a web UI. Phase 5 (Q4 2026) deepens the Ads manifest and prepares SEO v1.0. Phase 6 (Q1 2027) begins Ads v0.1 implementation.
+The current sequence is tracked in the [Start-X OSS Master Roadmap v3.0](./master_roadmap_v3.md). Phase 1 is complete, Phase 2 is effectively complete, and Phase 3 has completed the SEO CLI code while publication work remains. Next come Phase 4 (SEO Web UI), Phase 5 (Ads preparation + SEO v1.0), and Phase 6 (Ads v0.1).
 
-Dates are assumptions and may move. If priorities shift, we may delay OSS starts. We will state such shifts on the roadmap itself.
+We now track progress by gates rather than fixed monthly dates. If priorities shift, we will state the reason on the roadmap itself.
 
 Success and retreat criteria live in operational documentation. Here we only commit to periodic review and small Manifesto edits when feedback warrants them.
 
