@@ -588,12 +588,12 @@ export const COMMERCIAL_HINT =
 | N1 | phase5(系統A) | N0後 |
 | N2 | phase4_seo_web | N0後・N1と並列 |
 | N3 | phase5(系統B) | ○ 即(並列推奨) |
-| N4 | 本書 N4 | N1後 |
+| N4 | [remaining nodes Part A](./remaining_nodes_completion_v1.md) | N1後 |
 | N5 | phase6(コピー→mos-kit依存に読替) | N4後 |
 | N6 | phase7(コピー→mos-kit依存に読替) | N4後・N5と並列 |
-| N7/N8 | 本書 N7/N8 + phase4パターン | 各CLI後 |
-| N9 | 本書 N9 | 3編CLI後 |
-| N10 | 本書 N10 | 随時 |
+| N7/N8 | [remaining nodes Part B](./remaining_nodes_completion_v1.md) + phase4パターン | 各CLI後 |
+| N9 | [remaining nodes Part C](./remaining_nodes_completion_v1.md) | 3編CLI後 |
+| N10 | [remaining nodes Part D](./remaining_nodes_completion_v1.md) | 随時 |
 
 ---
 
