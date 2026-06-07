@@ -584,7 +584,7 @@ export const COMMERCIAL_HINT =
 
 | ノード | 参照詳細 | 即着手可否 |
 |---|---|---|
-| N0 | phase3_seo_cli_finalize | ○ 即 |
+| N0 | [N0 execution runbook](./n0_execution_runbook_v1.md) + phase3_seo_cli_finalize | ○ 即 |
 | N1 | phase5(系統A) | N0後 |
 | N2 | phase4_seo_web | N0後・N1と並列 |
 | N3 | phase5(系統B) | ○ 即(並列推奨) |
