@@ -344,7 +344,7 @@ gh release create v0.1.0 --repo start-x-work/marketing-os-ads \
 - [ ] アナウンス(P6-T6、手動)
 - [ ] 書き込み系API(自動入稿)を一切実装していない
 
-すべて満たせば **広告編 v0.1 完了 → SNS編(将来)へ**。
+すべて満たせば **広告編 v0.1 完了 → [SNS編(Phase 7)](./phase7_social_impl_v1.md)へ**。
 
 ---
 
@@ -383,7 +383,7 @@ P6-T5 の npm公開・P6-T6 のアナウンスは私が確認してから。
 
 ## 8. 以降(将来)
 
-- SNS編 v0.1(3カテゴリの最後、`marketing-os-social`)
+- [SNS編 v0.1](./phase7_social_impl_v1.md)(3カテゴリの最後、`marketing-os-social`)
 - 3カテゴリを束ねる `marketing-os` メタブランド検討
 - 各編の Web UI 展開
 

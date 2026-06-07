@@ -24,6 +24,7 @@
 | `phase4_seo_web_impl_v1.md` | Phase 4(Web UI) | 待機 |
 | [`phase5_ads_prep_seo_v1.md`](./phase5_ads_prep_seo_v1.md) | Phase 5(広告準備+SEO v1.0) | 待機 |
 | [`phase6_ads_impl_v1.md`](./phase6_ads_impl_v1.md) | Phase 6(広告 v0.1) | 待機 |
+| [`phase7_social_impl_v1.md`](./phase7_social_impl_v1.md) | Phase 7(SNS v0.1) | 将来 |
 | **`master_roadmap_v3.md`(本書)** | 全体索引・進捗 | — |
 
 ---
@@ -64,7 +65,7 @@
 ▷ Phase 6   広告 v0.1 ................................ 着手可能(Gate D後)
    └─ 完了: 広告編 v0.1 公開
    │
-   (将来) SNS編 → 3カテゴリ完成 → メタブランド検討
+   (将来) SNS編(Phase 7) → 3カテゴリ完成 → メタブランド検討
 ```
 
 凡例: ✓完了 / ◐進行中 / ▷待機(着手可能)
@@ -211,7 +212,7 @@ npx @start-x-work/mos-seo audit site https://example.com   # 外部確認
 最終ゴール(3カテゴリ完成):
 - [ ] SEO編 v1.0 公開(Phase 5)
 - [ ] 広告編 v0.1 公開(Phase 6)
-- [ ] SNS編 v0.1 公開(将来)
+- [ ] SNS編 v0.1 公開(Phase 7)
 - [ ] 3カテゴリを束ねる構想の検討
 
 各編が「診断・評価・構造化」に徹し、Marketing-OS思想を保ったまま、
