@@ -1,5 +1,7 @@
 # Start-X OSS 網羅的実装マスター v1.0
 
+> 後継版: [`implementation_blueprint_v2.md`](./implementation_blueprint_v2.md)。以降の実行順は v2.0 の依存グラフを優先する。
+
 **作成日:** 2026年6月7日
 **位置づけ:** 全実装を依存順に1本で進めるための決定版マスター指示書
 **対象:** `start-x-work` Organization 全リポジトリ
