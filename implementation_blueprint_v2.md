@@ -165,6 +165,8 @@ marketing-os-seo を公開可能状態にする。lint/build/test を緑にし�
 
 ### N1 — SEO v1.0(安定API + v0.2機能)
 
+**詳細:** [`next_phase_manifesto_sync_n1_v1.md`](./next_phase_manifesto_sync_n1_v1.md) Task B · [`phase5_ads_prep_seo_v1.md`](./phase5_ads_prep_seo_v1.md) 系統A
+
 **目的:** core を semver安定APIにし、ボリューム推定・多言語・マルチモデルを追加。**N4(mos-kit抽出)の前提。**
 **依存:** N0
 **成果物:** `@start-x-work/mos-seo` v1.0.0
@@ -585,7 +587,7 @@ export const COMMERCIAL_HINT =
 | ノード | 参照詳細 | 即着手可否 |
 |---|---|---|
 | N0 | [N0 execution runbook](./n0_execution_runbook_v1.md) + phase3_seo_cli_finalize | ○ 即 |
-| N1 | phase5(系統A) | N0後 |
+| N1 | [next phase Task B](./next_phase_manifesto_sync_n1_v1.md) + phase5(系統A) | N0後 |
 | N2 | phase4_seo_web | N0後・N1と並列 |
 | N3 | phase5(系統B) | ○ 即(並列推奨) |
 | N4 | [remaining nodes Part A](./remaining_nodes_completion_v1.md) | N1後 |

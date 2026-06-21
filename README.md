@@ -17,7 +17,7 @@ Marketing-OS is a project to open marketing’s decision-making structure to the
 5. [ロードマップ](#5-ロードマップ) / [Roadmap](#5-roadmap)
 6. [参加方法](#6-参加方法) / [How to Contribute](#6-how-to-contribute)
 
-関連文書: [editor.md](./editor.md)（編集者性と OSS の接続）・[licenses.md](./licenses.md)（ライセンス選定の理由）・[master_roadmap_v3.md](./master_roadmap_v3.md)（OSS 全体ロードマップ）・[implementation_blueprint_v2.md](./implementation_blueprint_v2.md)（実装ブループリント）
+関連文書: [editor.md](./editor.md)（編集者性と OSS の接続）・[licenses.md](./licenses.md)（ライセンス選定の理由）・[master_roadmap_v3.md](./master_roadmap_v3.md)（OSS 全体ロードマップ）・[implementation_blueprint_v2.md](./implementation_blueprint_v2.md)（実装ブループリント）・[next_phase_manifesto_sync_n1_v1.md](./next_phase_manifesto_sync_n1_v1.md)（次フェーズ: manifesto同期 + N1）
 
 ---
 
