@@ -18,6 +18,7 @@ SEO 編・mos-kit 共通基盤が整ったため、広告編 v0.1 の実装を�
 4. **プラットフォーム読み取り（限定）** — `@start-x-work/mos-kit` の `ReadOnlyPlatform` 経由。第一候補: Yahoo! / LY Ads
 
 実装リポジトリ: [marketing-os-ads](https://github.com/start-x-work/marketing-os-ads)  
+Web UI: [marketing-os-ads.pages.dev](https://marketing-os-ads.pages.dev)  
 調査・設計: [api-research.md](https://github.com/start-x-work/marketing-os-ads/blob/main/docs/api-research.md) · [architecture.md](https://github.com/start-x-work/marketing-os-ads/blob/main/docs/architecture.md)
 
 ### あえて作らないもの（v0.1）

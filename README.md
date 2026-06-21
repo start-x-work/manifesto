@@ -121,9 +121,12 @@ Phase 4(SEO 編 Web UI):完了(2026年6月、当初想定より前倒し)。
 Phase 5(SEO v1.0 + 広告編準備):SEO v1.0 系統は完了(2026年6月、前倒し)。
   `@start-x-work/mos-kit` 抽出(N4)・SEO v1.1.0 への依存切替を完了。
   広告編は API 調査・設計ドキュメント(N3)を完了し、v0.1 実装(N5)を着手。
-Phase 6(広告編 v0.1):進行中(2026年6月、前倒し)。
+Phase 6(広告編 v0.1):完了(2026年6月、前倒し)。
   CLI `@start-x-work/mos-ads` v0.1 — キャンペーン構造診断・判断ログ・クリエイティブ評価。
-  実装リポ: [marketing-os-ads](https://github.com/start-x-work/marketing-os-ads)。
+  Web UI は [marketing-os-ads.pages.dev](https://marketing-os-ads.pages.dev) で公開(N7)。
+Phase 7(SNS 編 v0.1):完了(2026年6月、前倒し)。
+  CLI `@start-x-work/mos-social` v0.1 — 投稿評価・カレンダー診断・アカウント診断。自動投稿なし。
+  実装リポ: [marketing-os-social](https://github.com/start-x-work/marketing-os-social)。
 
 粗い位相と Gate の詳細は [Start-X OSS マスターロードマップ v3.0](./master_roadmap_v3.md) も参照。月固定のスケジュールではなく、Gate（完成度）で進行を判断する。優先順位が入れ替わる場合は、ロードマップ上で理由を明示する。
 
@@ -142,9 +145,12 @@ Phase 4 (SEO pillar Web UI): complete (June 2026, ahead of the original schedule
 Phase 5 (SEO v1.0 + Ads preparation): SEO v1.0 track complete (June 2026, ahead of schedule).
   Extracted `@start-x-work/mos-kit` (N4) and migrated SEO to v1.1.0.
   Ads pillar: API research and architecture docs (N3) complete; v0.1 implementation (N5) started.
-Phase 6 (Ads pillar v0.1): in progress (June 2026, ahead of schedule).
+Phase 6 (Ads pillar v0.1): complete (June 2026, ahead of schedule).
   CLI `@start-x-work/mos-ads` v0.1 — campaign structure diagnosis, decision logs, creative evaluation.
-  Repository: [marketing-os-ads](https://github.com/start-x-work/marketing-os-ads).
+  Web UI live at [marketing-os-ads.pages.dev](https://marketing-os-ads.pages.dev) (N7).
+Phase 7 (Social pillar v0.1): complete (June 2026, ahead of schedule).
+  CLI `@start-x-work/mos-social` v0.1 — post evaluation, calendar diagnosis, account audit. No auto posting.
+  Repository: [marketing-os-social](https://github.com/start-x-work/marketing-os-social).
 
 For gates and finer-grained tracking, see the [Start-X OSS Master Roadmap v3.0](./master_roadmap_v3.md). We track progress by gates rather than fixed monthly dates. If priorities shift, we will state the reason on the roadmap itself.
 
