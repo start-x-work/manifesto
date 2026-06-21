@@ -127,6 +127,9 @@ Phase 6(広告編 v0.1):完了(2026年6月、前倒し)。
 Phase 7(SNS 編 v0.1):完了(2026年6月、前倒し)。
   CLI `@start-x-work/mos-social` v0.1 — 投稿評価・カレンダー診断・アカウント診断。自動投稿なし。
   実装リポ: [marketing-os-social](https://github.com/start-x-work/marketing-os-social)。
+統合 CLI(N9):完了(2026年6月)。
+  `@start-x-work/marketing-os` — SEO / 広告 / SNS を `marketing-os <pillar> <command>` で束ねる。
+  実装リポ: [marketing-os](https://github.com/start-x-work/marketing-os)。
 
 粗い位相と Gate の詳細は [Start-X OSS マスターロードマップ v3.0](./master_roadmap_v3.md) も参照。月固定のスケジュールではなく、Gate（完成度）で進行を判断する。優先順位が入れ替わる場合は、ロードマップ上で理由を明示する。
 
@@ -151,6 +154,9 @@ Phase 6 (Ads pillar v0.1): complete (June 2026, ahead of schedule).
 Phase 7 (Social pillar v0.1): complete (June 2026, ahead of schedule).
   CLI `@start-x-work/mos-social` v0.1 — post evaluation, calendar diagnosis, account audit. No auto posting.
   Repository: [marketing-os-social](https://github.com/start-x-work/marketing-os-social).
+Unified CLI (N9): complete (June 2026).
+  `@start-x-work/marketing-os` — `marketing-os <pillar> <command>` across SEO, Ads, and Social.
+  Repository: [marketing-os](https://github.com/start-x-work/marketing-os).
 
 For gates and finer-grained tracking, see the [Start-X OSS Master Roadmap v3.0](./master_roadmap_v3.md). We track progress by gates rather than fixed monthly dates. If priorities shift, we will state the reason on the roadmap itself.
 
