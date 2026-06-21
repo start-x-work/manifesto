@@ -127,6 +127,7 @@ Phase 6(広告編 v0.1):完了(2026年6月、前倒し)。
 Phase 7(SNS 編 v0.1):完了(2026年6月、前倒し)。
   CLI `@start-x-work/mos-social` v0.1 — 投稿評価・カレンダー診断・アカウント診断。自動投稿なし。
   実装リポ: [marketing-os-social](https://github.com/start-x-work/marketing-os-social)。
+  Web UI: [marketing-os-social.pages.dev](https://marketing-os-social.pages.dev) (N8)。
 統合 CLI(N9):完了(2026年6月)。
   `@start-x-work/marketing-os` — SEO / 広告 / SNS を `marketing-os <pillar> <command>` で束ねる。
   実装リポ: [marketing-os](https://github.com/start-x-work/marketing-os)。
@@ -154,6 +155,7 @@ Phase 6 (Ads pillar v0.1): complete (June 2026, ahead of schedule).
 Phase 7 (Social pillar v0.1): complete (June 2026, ahead of schedule).
   CLI `@start-x-work/mos-social` v0.1 — post evaluation, calendar diagnosis, account audit. No auto posting.
   Repository: [marketing-os-social](https://github.com/start-x-work/marketing-os-social).
+  Web UI: [marketing-os-social.pages.dev](https://marketing-os-social.pages.dev) (N8).
 Unified CLI (N9): complete (June 2026).
   `@start-x-work/marketing-os` — `marketing-os <pillar> <command>` across SEO, Ads, and Social.
   Repository: [marketing-os](https://github.com/start-x-work/marketing-os).

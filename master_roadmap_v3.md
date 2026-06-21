@@ -216,7 +216,7 @@ npx @start-x-work/mos-seo audit site https://example.com   # 外部確認
 - [x] SEO編 v1.0 公開(Phase 5)
 - [x] 広告編 v0.1 公開(Phase 6) — CLI + Web UI
 - [x] SNS編 v0.1 公開(Phase 7) — CLI、npm 待ち
-- [ ] 統合CLI marketing-os 公開(N9) — GitHub v0.1.0、npm 待ち
+- [ ] 統合CLI marketing-os 公開(N9) — GitHub + npm v0.1.0 公開済み
 - [ ] 3カテゴリを束ねる構想の検討
 
 各編が「診断・評価・構造化」に徹し、Marketing-OS思想を保ったまま、
