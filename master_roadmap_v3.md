@@ -20,8 +20,8 @@
 |---|---|---|
 | `repo_setup_v2.md` | Phase 1(Manifesto) | ✓ 完了 |
 | `phase1_completion_v1.md` | Phase 1 残タスク | ✓ 完了 |
-| `phase3_seo_cli_finalize_v1.md` | Phase 3 仕上げ | 進行中 |
-| `phase4_seo_web_impl_v1.md` | Phase 4(Web UI) | 待機 |
+| `phase3_seo_cli_finalize_v1.md` | Phase 3 仕上げ | ✓ 完了 |
+| `phase4_seo_web_impl_v1.md` | Phase 4(Web UI) | ✓ 完了 |
 | [`phase5_ads_prep_seo_v1.md`](./phase5_ads_prep_seo_v1.md) | Phase 5(広告準備+SEO v1.0) | 待機 |
 | [`phase6_ads_impl_v1.md`](./phase6_ads_impl_v1.md) | Phase 6(広告 v0.1) | 待機 |
 | [`phase7_social_impl_v1.md`](./phase7_social_impl_v1.md) | Phase 7(SNS v0.1) | 将来 |
@@ -42,9 +42,9 @@
 | Phase 1: Manifesto | 5月の3週間 | 5/13 即日完了 | ✓ 完了 |
 | Phase 1残: リンク/Issue/metrics | 5月内 | 完了 | ✓ 完了 |
 | Phase 2: 初期運用 | 6月1ヶ月 | 短縮(数日) | ✓ 実質完了 |
-| Phase 3: SEO CLI実装 | 7-8月(9-10週) | 5月内に実装 | ◐ コード完了・公開作業中 |
-| Phase 4: SEO Web UI | 9-10月 | 前倒し可能 | 待機 |
-| Phase 5: 広告準備+SEO v1.0 | Q4 | 前倒し可能 | 待機 |
+| Phase 3: SEO CLI実装 | 7-8月(9-10週) | 2026年6月 npm公開 | ✓ 完了 |
+| Phase 4: SEO Web UI | 9-10月 | 2026年6月 Cloudflare公開 | ✓ 完了 |
+| Phase 5: 広告準備+SEO v1.0 | Q4 | 進行中 | ◐ 進行中 |
 | Phase 6: 広告 v0.1 | 2027 Q1 | 前倒し可能 | 待機 |
 
 **観察:** Cursor + AI支援により、実装速度が当初想定の数倍。月固定スケジュールは無意味なので、本書では**「実績 + 残作業」**で管理する。
@@ -57,13 +57,13 @@
 ✓ Phase 1   Manifesto公開 ............................ 完了
 ✓ Phase 1残 リンク/Issue/metrics ..................... 完了
 ✓ Phase 2   初期運用・安定化 .......................... 実質完了
-◐ Phase 3   SEO CLI .................................. コード完了・公開作業中
-   └─ 残: npm公開 + v0.1.0 Release(Gate B)
+✓ Phase 3   SEO CLI .................................. 完了(2026年6月、前倒し)
+   └─ @start-x-work/mos-seo v0.1.0 npm公開
    │
-▷ Phase 4   SEO Web UI ............................... 着手可能
-   └─ Gate C: Web版がCloudflareで安定稼働
+✓ Phase 4   SEO Web UI ............................... 完了(2026年6月、前倒し)
+   └─ marketing-os-seo.pages.dev で公開
    │
-▷ Phase 5   広告準備 + SEO v1.0 ...................... 着手可能(Phase 4と一部並行可)
+◐ Phase 5   広告準備 + SEO v1.0 ...................... 進行中
    └─ Gate D: SEO v1.0 + 広告スコープ確定
    │
 ▷ Phase 6   広告 v0.1 ................................ 着手可能(Gate D後)
@@ -71,6 +71,8 @@
    │
    (将来) SNS編(Phase 7) → 3カテゴリ完成 → メタブランド検討
 ```
+
+前倒しの理由: SEO 編の実装が想定より順調に進んだため。日程は前提であり、変更時は本ロードマップ上で理由を明示する。
 
 凡例: ✓完了 / ◐進行中 / ▷待機(着手可能)
 
@@ -121,10 +123,9 @@ npx @start-x-work/mos-seo audit site https://example.com   # 外部確認
 
 ### その後の順序
 
-1. **Phase 4(Web UI)着手** — `phase4_seo_web_impl_v1.md`
-2. **Phase 5系統B(広告調査)を並行開始** — [`phase5_ads_prep_seo_v1.md`](./phase5_ads_prep_seo_v1.md) の B1〜B4
-3. **Phase 4完了後、Phase 5系統A(SEO v1.0)** — A1〜A6
-4. **Gate D通過後、Phase 6(広告実装)** — [`phase6_ads_impl_v1.md`](./phase6_ads_impl_v1.md)
+1. **Phase 5系統A(SEO v1.0)** — [`next_phase_manifesto_sync_n1_v1.md`](./next_phase_manifesto_sync_n1_v1.md) Task B / [`phase5_ads_prep_seo_v1.md`](./phase5_ads_prep_seo_v1.md) A1〜A6
+2. **Phase 5系統B(広告調査)を並行** — B1〜B4
+3. **Gate D通過後、Phase 6(広告実装)** — [`phase6_ads_impl_v1.md`](./phase6_ads_impl_v1.md)
 
 ---
 
@@ -133,9 +134,9 @@ npx @start-x-work/mos-seo audit site https://example.com   # 外部確認
 | Gate | 通過条件 | 状態 |
 |---|---|---|
 | A(Phase 2→3) | 初期運用安定 + 実装準備完了 | ✓ 通過 |
-| B(Phase 3→4) | 4機能CLI動作 + npm公開 + Release | ◐ 公開作業中 |
-| C(Phase 4→5) | Web版がCloudflareで安定稼働 | 待機 |
-| D(Phase 5→6) | SEO v1.0 + 広告スコープ確定 | 待機 |
+| B(Phase 3→4) | 4機能CLI動作 + npm公開 + Release | ✓ 通過 |
+| C(Phase 4→5) | Web版がCloudflareで安定稼働 | ✓ 通過 |
+| D(Phase 5→6) | SEO v1.0 + 広告スコープ確定 | ◐ 進行中 |
 
 すべて**OSS内部の完成度**で判定。事業数値には依存しない。
 

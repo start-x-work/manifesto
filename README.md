@@ -111,17 +111,40 @@ Transparency: publish the roadmap and explain changes whenever feasible. For suc
 
 ## 5. ロードマップ
 
-粗い位相は [Start-X OSS マスターロードマップ v3.0](./master_roadmap_v3.md) で管理する。Phase 1 は完了、Phase 2 は実質完了、Phase 3 は SEO CLI のコード完了・公開作業中である。以降は Phase 4（SEO Web UI）、Phase 5（広告準備 + SEO v1.0）、Phase 6（広告 v0.1）へ進む。
+Phase 1(2026年5月):OSS 基盤と Manifesto の公開 — 完了。
+Phase 2(6月):商用 Marketing-OS 本体への集中。OSS は最小メンテナンス — 実質完了。
+Phase 3(SEO 編 v0.1 CLI):完了(2026年6月、当初想定より前倒し)。
+  [@start-x-work/mos-seo](https://www.npmjs.com/package/@start-x-work/mos-seo) として npm 公開。LLMO/AEO 診断・サイト診断・
+  コンテンツブリーフ・キーワード意図マッピングを CLI で提供。
+Phase 4(SEO 編 Web UI):完了(2026年6月、当初想定より前倒し)。
+  [Cloudflare Pages](https://marketing-os-seo.pages.dev) 上で公開。CLI と同じ診断を Web から利用可能。
+Phase 5(SEO v1.0 + 広告編準備):進行中。
+  SEO の公開 API 安定化、ボリューム推定・多言語・マルチモデル対応。
+  並行して広告編 Manifest の詳細化と API 調査。
+Phase 6(広告編 v0.1):未着手。SEO 編で確立した共通基盤を再利用して着手予定。
 
-月固定のスケジュールではなく、Gate（完成度）で進行を判断する。優先順位が入れ替わる場合は、ロードマップ上で理由を明示する。
+粗い位相と Gate の詳細は [Start-X OSS マスターロードマップ v3.0](./master_roadmap_v3.md) も参照。月固定のスケジュールではなく、Gate（完成度）で進行を判断する。優先順位が入れ替わる場合は、ロードマップ上で理由を明示する。
+
+日程は前提であり変更されうる。前倒し・後ろ倒しいずれの場合も、判断の理由をこのロードマップ上で明示する。今回 Phase 3・4 を前倒しできたのは、SEO 編の実装が想定より順調に進んだためである。
 
 成果と撤退に関する判断基準は、別紙の運用基準に記す。ここでは、定期的に読み直し、必要なら Manifesto 本文を微修正するプロセスだけを約束する。
 
 ## 5. Roadmap
 
-The current sequence is tracked in the [Start-X OSS Master Roadmap v3.0](./master_roadmap_v3.md). Phase 1 is complete, Phase 2 is effectively complete, and Phase 3 has completed the SEO CLI code while publication work remains. Next come Phase 4 (SEO Web UI), Phase 5 (Ads preparation + SEO v1.0), and Phase 6 (Ads v0.1).
+Phase 1 (May 2026): OSS foundation and Manifesto publication — complete.
+Phase 2 (June): Focus on commercial Marketing-OS; minimal OSS maintenance — effectively complete.
+Phase 3 (SEO pillar v0.1 CLI): complete (June 2026, ahead of the original schedule).
+  Published on npm as [@start-x-work/mos-seo](https://www.npmjs.com/package/@start-x-work/mos-seo). The CLI covers LLMO/AEO audit, site audit, content briefs, and keyword intent mapping.
+Phase 4 (SEO pillar Web UI): complete (June 2026, ahead of the original schedule).
+  Live on [Cloudflare Pages](https://marketing-os-seo.pages.dev). The same diagnostics are available from the web.
+Phase 5 (SEO v1.0 + Ads preparation): in progress.
+  Stabilize the public SEO API; add volume estimation, multi-language support, and multi-model LLMO.
+  In parallel, refine the Ads pillar Manifest and investigate ad APIs.
+Phase 6 (Ads pillar v0.1): not started. Planned to reuse the shared foundation established in the SEO pillar.
 
-We now track progress by gates rather than fixed monthly dates. If priorities shift, we will state the reason on the roadmap itself.
+For gates and finer-grained tracking, see the [Start-X OSS Master Roadmap v3.0](./master_roadmap_v3.md). We track progress by gates rather than fixed monthly dates. If priorities shift, we will state the reason on the roadmap itself.
+
+Dates are assumptions and may change. Whenever we move ahead or defer, we will explain the rationale here. Phase 3 and 4 shipped early because SEO implementation progressed faster than expected.
 
 Success and retreat criteria live in operational documentation. Here we only commit to periodic review and small Manifesto edits when feedback warrants them.
 

@@ -6,9 +6,9 @@
 
 検索エンジン最適化の知見は成熟している一方で、ChatGPT・Perplexity・Google AI Overviews など、生成 AI を介した可視性（LLMO）や、回答最適化（AEO）の実務はまだ揺れている。ベンダーはスコアやレポートを提供するが、診断の前提・プロンプト設計・再現手続きがブラックボックスのまま流通しやすい。結果として、チーム内で「なぜその優先順位か」を編集し続ける土台が薄い。
 
-### v0.1 で作るもの（CLI、2026 年 7–8 月目安）
+### v0.1（CLI + Web UI、2026 年 6 月公開済み）
 
-次の四機能を中核とする。
+次の四機能を中核とする。CLI は [@start-x-work/mos-seo](https://www.npmjs.com/package/@start-x-work/mos-seo)、Web UI は [marketing-os-seo.pages.dev](https://marketing-os-seo.pages.dev) から利用できる。実装リポジトリ: [marketing-os-seo](https://github.com/start-x-work/marketing-os-seo)。
 
 1. **LLMO／AEO 診断** — 生成 AI 経由の可視性を、再現可能な手順とスコア枠で把握する。
 2. **サイト診断・内部対策** — 技術的 SEO の主要項目（構造化データ、サイトマップ、robots、CWV 関連など）を一括で扱う。
@@ -35,9 +35,9 @@ SEO 編 OSS は素材と診断枠を開く。組織全体のワークフロー�
 
 Classic SEO is well documented, yet visibility through generative surfaces (LLMO) and answer-oriented optimization (AEO) still shifts in practice. Vendors ship scores and reports, but premises, prompt design, and reproducible procedure often circulate as black boxes. Teams then lack a durable base for continuously editing “why this priority.”
 
-### What v0.1 builds (CLI, Jul–Aug 2026 target)
+### What v0.1 ships (CLI + Web UI, published June 2026)
 
-Four pillars:
+Four pillars, available via CLI ([@start-x-work/mos-seo](https://www.npmjs.com/package/@start-x-work/mos-seo)) and Web UI ([marketing-os-seo.pages.dev](https://marketing-os-seo.pages.dev)). Repository: [marketing-os-seo](https://github.com/start-x-work/marketing-os-seo).
 
 1. **LLMO / AEO audit** — capture generative visibility with reproducible steps and a scoring frame.
 2. **Technical SEO audit** — cover major technical items (structured data, sitemap, robots, CWV-related signals, and related checks).
