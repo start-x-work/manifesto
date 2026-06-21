@@ -22,8 +22,8 @@
 | `phase1_completion_v1.md` | Phase 1 残タスク | ✓ 完了 |
 | `phase3_seo_cli_finalize_v1.md` | Phase 3 仕上げ | ✓ 完了 |
 | `phase4_seo_web_impl_v1.md` | Phase 4(Web UI) | ✓ 完了 |
-| [`phase5_ads_prep_seo_v1.md`](./phase5_ads_prep_seo_v1.md) | Phase 5(広告準備+SEO v1.0) | 待機 |
-| [`phase6_ads_impl_v1.md`](./phase6_ads_impl_v1.md) | Phase 6(広告 v0.1) | 待機 |
+| [`phase5_ads_prep_seo_v1.md`](./phase5_ads_prep_seo_v1.md) | Phase 5(広告準備+SEO v1.0) | ◐ SEO v1.0完了・広告準備完了 |
+| [`phase6_ads_impl_v1.md`](./phase6_ads_impl_v1.md) | Phase 6(広告 v0.1) | ◐ 進行中 |
 | [`phase7_social_impl_v1.md`](./phase7_social_impl_v1.md) | Phase 7(SNS v0.1) | 将来 |
 | [`implementation_blueprint_v2.md`](./implementation_blueprint_v2.md) | Phase 3〜統合CLI/商用連携 | 実装ブループリント |
 | [`remaining_nodes_completion_v1.md`](./remaining_nodes_completion_v1.md) | N4/N7/N8/N9/N10 詳細 | 独立詳細指示書 |
@@ -44,8 +44,8 @@
 | Phase 2: 初期運用 | 6月1ヶ月 | 短縮(数日) | ✓ 実質完了 |
 | Phase 3: SEO CLI実装 | 7-8月(9-10週) | 2026年6月 npm公開 | ✓ 完了 |
 | Phase 4: SEO Web UI | 9-10月 | 2026年6月 Cloudflare公開 | ✓ 完了 |
-| Phase 5: 広告準備+SEO v1.0 | Q4 | 進行中 | ◐ 進行中 |
-| Phase 6: 広告 v0.1 | 2027 Q1 | 前倒し可能 | 待機 |
+| Phase 5: 広告準備+SEO v1.0 | Q4 | SEO v1.0完了・広告準備完了 | ◐ 広告 v0.1着手 |
+| Phase 6: 広告 v0.1 | 2027 Q1 | 2026年6月 GitHub v0.1.0 | ◐ 進行中 |
 
 **観察:** Cursor + AI支援により、実装速度が当初想定の数倍。月固定スケジュールは無意味なので、本書では**「実績 + 残作業」**で管理する。
 
@@ -63,11 +63,11 @@
 ✓ Phase 4   SEO Web UI ............................... 完了(2026年6月、前倒し)
    └─ marketing-os-seo.pages.dev で公開
    │
-◐ Phase 5   広告準備 + SEO v1.0 ...................... 進行中
-   └─ Gate D: SEO v1.0 + 広告スコープ確定
+◐ Phase 5   広告準備 + SEO v1.0 ...................... SEO v1.0完了・広告準備完了
+   └─ Gate D: SEO v1.0 ✓ / 広告スコープ確定 ✓
    │
-▷ Phase 6   広告 v0.1 ................................ 着手可能(Gate D後)
-   └─ 完了: 広告編 v0.1 公開
+◐ Phase 6   広告 v0.1 ................................ 進行中(2026年6月、前倒し)
+   └─ @start-x-work/mos-ads v0.1.0 GitHub公開
    │
    (将来) SNS編(Phase 7) → 3カテゴリ完成 → メタブランド検討
 ```
@@ -84,11 +84,7 @@
 
 | スプリント | 内容 | 並行可否 | 指示書 |
 |---|---|---|---|
-| **現在** | Phase 3 公開作業(Gate Bクローズ) | — | phase3_finalize |
-| Sprint N+1 | Phase 4 Web UI | Phase 3完了後 | phase4_web |
-| Sprint N+2 | Phase 5 系統A(SEO v1.0) | Phase 4と並行可 | [phase5](./phase5_ads_prep_seo_v1.md) |
-| Sprint N+2 | Phase 5 系統B(広告準備) | Phase 4と並行可 | [phase5](./phase5_ads_prep_seo_v1.md) |
-| Sprint N+3 | Phase 6(広告 v0.1) | Gate D後 | [phase6](./phase6_ads_impl_v1.md) |
+| **現在** | Phase 6 広告 v0.1(mos-ads) | Phase 5 Gate D 通過後 | [phase6](./phase6_ads_impl_v1.md) |
 
 ### 並行実行の指針
 
@@ -136,7 +132,7 @@ npx @start-x-work/mos-seo audit site https://example.com   # 外部確認
 | A(Phase 2→3) | 初期運用安定 + 実装準備完了 | ✓ 通過 |
 | B(Phase 3→4) | 4機能CLI動作 + npm公開 + Release | ✓ 通過 |
 | C(Phase 4→5) | Web版がCloudflareで安定稼働 | ✓ 通過 |
-| D(Phase 5→6) | SEO v1.0 + 広告スコープ確定 | ◐ 進行中 |
+| D(Phase 5→6) | SEO v1.0 + 広告スコープ確定 | ✓ 通過 |
 
 すべて**OSS内部の完成度**で判定。事業数値には依存しない。
 
@@ -215,8 +211,8 @@ npx @start-x-work/mos-seo audit site https://example.com   # 外部確認
 
 ```
 最終ゴール(3カテゴリ完成):
-- [ ] SEO編 v1.0 公開(Phase 5)
-- [ ] 広告編 v0.1 公開(Phase 6)
+- [x] SEO編 v1.0 公開(Phase 5)
+- [ ] 広告編 v0.1 公開(Phase 6) — GitHub v0.1.0 公開済み、npm 待ち
 - [ ] SNS編 v0.1 公開(Phase 7)
 - [ ] 3カテゴリを束ねる構想の検討
 

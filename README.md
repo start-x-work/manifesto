@@ -118,10 +118,12 @@ Phase 3(SEO 編 v0.1 CLI):完了(2026年6月、当初想定より前倒し)。
   コンテンツブリーフ・キーワード意図マッピングを CLI で提供。
 Phase 4(SEO 編 Web UI):完了(2026年6月、当初想定より前倒し)。
   [Cloudflare Pages](https://marketing-os-seo.pages.dev) 上で公開。CLI と同じ診断を Web から利用可能。
-Phase 5(SEO v1.0 + 広告編準備):進行中。
-  SEO の公開 API 安定化、ボリューム推定・多言語・マルチモデル対応。
-  並行して広告編 Manifest の詳細化と API 調査。
-Phase 6(広告編 v0.1):未着手。SEO 編で確立した共通基盤を再利用して着手予定。
+Phase 5(SEO v1.0 + 広告編準備):SEO v1.0 系統は完了(2026年6月、前倒し)。
+  `@start-x-work/mos-kit` 抽出(N4)・SEO v1.1.0 への依存切替を完了。
+  広告編は API 調査・設計ドキュメント(N3)を完了し、v0.1 実装(N5)を着手。
+Phase 6(広告編 v0.1):進行中(2026年6月、前倒し)。
+  CLI `@start-x-work/mos-ads` v0.1 — キャンペーン構造診断・判断ログ・クリエイティブ評価。
+  実装リポ: [marketing-os-ads](https://github.com/start-x-work/marketing-os-ads)。
 
 粗い位相と Gate の詳細は [Start-X OSS マスターロードマップ v3.0](./master_roadmap_v3.md) も参照。月固定のスケジュールではなく、Gate（完成度）で進行を判断する。優先順位が入れ替わる場合は、ロードマップ上で理由を明示する。
 
@@ -137,10 +139,12 @@ Phase 3 (SEO pillar v0.1 CLI): complete (June 2026, ahead of the original schedu
   Published on npm as [@start-x-work/mos-seo](https://www.npmjs.com/package/@start-x-work/mos-seo). The CLI covers LLMO/AEO audit, site audit, content briefs, and keyword intent mapping.
 Phase 4 (SEO pillar Web UI): complete (June 2026, ahead of the original schedule).
   Live on [Cloudflare Pages](https://marketing-os-seo.pages.dev). The same diagnostics are available from the web.
-Phase 5 (SEO v1.0 + Ads preparation): in progress.
-  Stabilize the public SEO API; add volume estimation, multi-language support, and multi-model LLMO.
-  In parallel, refine the Ads pillar Manifest and investigate ad APIs.
-Phase 6 (Ads pillar v0.1): not started. Planned to reuse the shared foundation established in the SEO pillar.
+Phase 5 (SEO v1.0 + Ads preparation): SEO v1.0 track complete (June 2026, ahead of schedule).
+  Extracted `@start-x-work/mos-kit` (N4) and migrated SEO to v1.1.0.
+  Ads pillar: API research and architecture docs (N3) complete; v0.1 implementation (N5) started.
+Phase 6 (Ads pillar v0.1): in progress (June 2026, ahead of schedule).
+  CLI `@start-x-work/mos-ads` v0.1 — campaign structure diagnosis, decision logs, creative evaluation.
+  Repository: [marketing-os-ads](https://github.com/start-x-work/marketing-os-ads).
 
 For gates and finer-grained tracking, see the [Start-X OSS Master Roadmap v3.0](./master_roadmap_v3.md). We track progress by gates rather than fixed monthly dates. If priorities shift, we will state the reason on the roadmap itself.
 
