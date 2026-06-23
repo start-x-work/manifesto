@@ -17,7 +17,7 @@ Marketing-OS is a project to open marketing’s decision-making structure to the
 5. [ロードマップ](#5-ロードマップ) / [Roadmap](#5-roadmap)
 6. [参加方法](#6-参加方法) / [How to Contribute](#6-how-to-contribute)
 
-関連文書: [editor.md](./editor.md)（編集者性と OSS の接続）・[licenses.md](./licenses.md)（ライセンス選定の理由）・[master_roadmap_v3.md](./master_roadmap_v3.md)（OSS 全体ロードマップ）・[implementation_blueprint_v2.md](./implementation_blueprint_v2.md)（実装ブループリント）・[next_phase_manifesto_sync_n1_v1.md](./next_phase_manifesto_sync_n1_v1.md)（次フェーズ: manifesto同期 + N1）・**[docs/QUICKSTART.md](./docs/QUICKSTART.md)**（利用者向けクイックスタート）
+関連文書: [editor.md](./editor.md)（編集者性と OSS の接続）・[licenses.md](./licenses.md)（ライセンス選定の理由）・[master_roadmap_v3.md](./master_roadmap_v3.md)（OSS 全体ロードマップ）・[implementation_blueprint_v2.md](./implementation_blueprint_v2.md)（実装ブループリント）・[next_phase_manifesto_sync_n1_v1.md](./next_phase_manifesto_sync_n1_v1.md)（N1 フェーズ）・[next_phase_manifesto_sync_n2_v1.md](./next_phase_manifesto_sync_n2_v1.md)（運用完成度フェーズ）・**[docs/QUICKSTART.md](./docs/QUICKSTART.md)**（利用者向けクイックスタート）
 
 ---
 
@@ -129,8 +129,10 @@ Phase 7(SNS 編 v0.1):完了(2026年6月、前倒し)。
   実装リポ: [marketing-os-social](https://github.com/start-x-work/marketing-os-social)。
   Web UI: [marketing-os-social.pages.dev](https://marketing-os-social.pages.dev) (N8)。
 統合 CLI(N9):完了(2026年6月)。
-  `@start-x-work/marketing-os` — SEO / 広告 / SNS を `marketing-os <pillar> <command>` で束ねる。
+  `@start-x-work/marketing-os` v0.1.1 — SEO / 広告 / SNS を `marketing-os <pillar> <command>` で束ねる。
   実装リポ: [marketing-os](https://github.com/start-x-work/marketing-os)。
+利用者向けクイックスタート: [docs/QUICKSTART.md](./docs/QUICKSTART.md)（CLI・Web BYOK・GSC/Yahoo 連携手順）。
+運用設計(BYOK): 各 Web UI の AI API キー・GSC OAuth・Yahoo トークンは利用者がブラウザに保存（sessionStorage）。運営側の Cloudflare AI Secrets は不要。
 
 粗い位相と Gate の詳細は [Start-X OSS マスターロードマップ v3.0](./master_roadmap_v3.md) も参照。月固定のスケジュールではなく、Gate（完成度）で進行を判断する。優先順位が入れ替わる場合は、ロードマップ上で理由を明示する。
 
@@ -157,8 +159,10 @@ Phase 7 (Social pillar v0.1): complete (June 2026, ahead of schedule).
   Repository: [marketing-os-social](https://github.com/start-x-work/marketing-os-social).
   Web UI: [marketing-os-social.pages.dev](https://marketing-os-social.pages.dev) (N8).
 Unified CLI (N9): complete (June 2026).
-  `@start-x-work/marketing-os` — `marketing-os <pillar> <command>` across SEO, Ads, and Social.
+  `@start-x-work/marketing-os` v0.1.1 — `marketing-os <pillar> <command>` across SEO, Ads, and Social.
   Repository: [marketing-os](https://github.com/start-x-work/marketing-os).
+User quickstart: [docs/QUICKSTART.md](./docs/QUICKSTART.md) (CLI, Web BYOK, GSC/Yahoo).
+Operations (BYOK): AI keys, GSC OAuth, and Yahoo tokens are stored in the user’s browser (sessionStorage). No operator-side Cloudflare AI secrets required.
 
 For gates and finer-grained tracking, see the [Start-X OSS Master Roadmap v3.0](./master_roadmap_v3.md). We track progress by gates rather than fixed monthly dates. If priorities shift, we will state the reason on the roadmap itself.
 

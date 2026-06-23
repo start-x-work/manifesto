@@ -17,7 +17,9 @@ SEO 編・広告編・mos-kit 共通基盤が整ったため、SNS 編 v0.1 の�
 3. **アカウント/プロフィール診断** — 読み取り可能な範囲での監査
 4. **手動エクスポート読み込み** — API 制約のあるプラットフォーム向け
 
-実装リポジトリ: [marketing-os-social](https://github.com/start-x-work/marketing-os-social)
+実装リポジトリ: [marketing-os-social](https://github.com/start-x-work/marketing-os-social)  
+Web UI: [marketing-os-social.pages.dev](https://marketing-os-social.pages.dev)  
+**クイックスタート:** [docs/QUICKSTART.md](https://github.com/start-x-work/marketing-os-social/blob/main/docs/QUICKSTART.md)
 
 ### あえて作らないもの（v0.1）
 

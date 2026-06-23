@@ -500,28 +500,30 @@ Webフッター・READMEに反映。煽らず1行/1リンク。--quiet で抑制
 
 ```
 基盤:
-- [ ] mos-kit 公開、SEO編が依存切替(N4)
-- [ ] ReadOnlyPlatform に書き込みメソッド無
+- [x] mos-kit 公開、SEO編が依存切替(N4)
+- [x] ReadOnlyPlatform に書き込みメソッド無
 
 3カテゴリ CLI:
-- [ ] SEO CLI 公開(N0→N1, v1.1.0 mos-kit依存)
-- [ ] 広告 CLI 公開(N5, mos-kit依存・書込無)
-- [ ] SNS CLI 公開(N6, mos-kit依存・投稿無)
+- [x] SEO CLI 公開(N0→N1, mos-seo@1.1.1 mos-kit依存)
+- [x] 広告 CLI 公開(N5, mos-ads@0.1.2・Yahoo read-only・書込無)
+- [x] SNS CLI 公開(N6, mos-social@0.1.1・mos-kit依存・投稿無)
 
 3カテゴリ Web:
-- [ ] SEO Web 公開(N2)
-- [ ] 広告 Web 公開(N7)
-- [ ] SNS Web 公開(N8)
+- [x] SEO Web 公開(N2) + GSC BYOK
+- [x] 広告 Web 公開(N7) + Yahoo BYOK
+- [x] SNS Web 公開(N8) + AI BYOK
 
 統合・導線:
-- [ ] 統合CLI marketing-os 公開(N9)
-- [ ] 各編に商用導線(N10)
+- [x] 統合CLI marketing-os 公開(N9, v0.1.1)
+- [x] 各編に商用導線(N10)
+- [x] 利用者向け QUICKSTART(manifesto ハブ + 各編)
 
 横断:
-- [ ] 全編 Apache 2.0 / OS Indigo / NOTICE導線
-- [ ] 自動生成/実行/投稿/入稿/最適化が全編に存在しない
-- [ ] 事業数値が GitHub 上に無い
-- [ ] 各編CI緑
+- [x] 全編 Apache 2.0 / OS Indigo / NOTICE導線
+- [x] 自動生成/実行/投稿/入稿/最適化が全編に存在しない
+- [x] 事業数値が GitHub 上に無い
+- [x] 各編CI緑
+- [ ] 横断 docs サイト(E3) — 任意・未着手
 ```
 
 これが全部チェックされたとき、**構想完成**。

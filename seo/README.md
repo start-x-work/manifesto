@@ -8,7 +8,10 @@
 
 ### v0.1（CLI + Web UI、2026 年 6 月公開済み）
 
-次の四機能を中核とする。CLI は [@start-x-work/mos-seo](https://www.npmjs.com/package/@start-x-work/mos-seo)、Web UI は [marketing-os-seo.pages.dev](https://marketing-os-seo.pages.dev) から利用できる。実装リポジトリ: [marketing-os-seo](https://github.com/start-x-work/marketing-os-seo)。
+次の四機能を中核とする。CLI は [@start-x-work/mos-seo](https://www.npmjs.com/package/@start-x-work/mos-seo)、Web UI は [marketing-os-seo.pages.dev](https://marketing-os-seo.pages.dev) から利用できる。実装リポジトリ: [marketing-os-seo](https://github.com/start-x-work/marketing-os-seo)
+
+**Web UI:** [marketing-os-seo.pages.dev](https://marketing-os-seo.pages.dev) — AI キーと GSC OAuth は **BYOK**（ブラウザ sessionStorage）。  
+**クイックスタート:** [docs/QUICKSTART.md](https://github.com/start-x-work/marketing-os-seo/blob/main/docs/QUICKSTART.md)。
 
 1. **LLMO／AEO 診断** — 生成 AI 経由の可視性を、再現可能な手順とスコア枠で把握する。
 2. **サイト診断・内部対策** — 技術的 SEO の主要項目（構造化データ、サイトマップ、robots、CWV 関連など）を一括で扱う。

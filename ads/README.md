@@ -15,10 +15,11 @@ SEO 編・mos-kit 共通基盤が整ったため、広告編 v0.1 の実装を�
 1. **キャンペーン構造診断** — 設計上の問題点を診断する（実行・入稿はしない）
 2. **配信判断ログ** — 人間の判断を構造化して記録する
 3. **クリエイティブ評価** — 再現可能な評価手続き（生成はしない）
-4. **プラットフォーム読み取り（限定）** — `@start-x-work/mos-kit` の `ReadOnlyPlatform` 経由。第一候補: Yahoo! / LY Ads
+4. **プラットフォーム読み取り（限定）** — Yahoo! 広告 API（`platform yahoo` CLI + Web BYOK）。読み取り専用。
 
 実装リポジトリ: [marketing-os-ads](https://github.com/start-x-work/marketing-os-ads)  
 Web UI: [marketing-os-ads.pages.dev](https://marketing-os-ads.pages.dev)  
+**クイックスタート:** [docs/QUICKSTART.md](https://github.com/start-x-work/marketing-os-ads/blob/main/docs/QUICKSTART.md)  
 調査・設計: [api-research.md](https://github.com/start-x-work/marketing-os-ads/blob/main/docs/api-research.md) · [architecture.md](https://github.com/start-x-work/marketing-os-ads/blob/main/docs/architecture.md)
 
 ### あえて作らないもの（v0.1）
