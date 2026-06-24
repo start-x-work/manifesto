@@ -23,10 +23,12 @@
 
 ## 各編の詳細手順
 
-- [SEO Quickstart](../marketing-os-seo/docs/QUICKSTART.md)
-- [Ads Quickstart](../marketing-os-ads/docs/QUICKSTART.md)
-- [Social Quickstart](../marketing-os-social/docs/QUICKSTART.md)
-- [Unified CLI Quickstart](../marketing-os/docs/QUICKSTART.md)
+- [SEO Quickstart](https://github.com/start-x-work/marketing-os-seo/blob/main/docs/QUICKSTART.md)
+- [Ads Quickstart](https://github.com/start-x-work/marketing-os-ads/blob/main/docs/QUICKSTART.md)
+- [Social Quickstart](https://github.com/start-x-work/marketing-os-social/blob/main/docs/QUICKSTART.md)
+- [Unified CLI Quickstart](https://github.com/start-x-work/marketing-os/blob/main/docs/QUICKSTART.md)
+
+現行サービス構成: [SERVICE_STRUCTURE.md](./SERVICE_STRUCTURE.md)
 
 ## OSS と商用 Marketing-OS
 

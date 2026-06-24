@@ -6,11 +6,11 @@
 
 ソーシャル向けツールは投稿効率化に偏りがちである。スケジューラ、承認フロー、ダッシュボードは成熟した一方で、「コミュニティの声をどの意思決定に接続するか」という編集問題は依然として人間の暗黙知に寄りかかりやすい。運用は速くなっても、場のルールと優先順位の言語化が追いつかない。
 
-### v0.1 の位置づけ（2026年 — 前倒し着手）
+### v0.1 の位置づけ（2026年 — 公開済み）
 
-SEO 編・広告編・mos-kit 共通基盤が整ったため、SNS 編 v0.1 の実装を開始した。CLI `@start-x-work/mos-social` として、評価・診断・構造化に限定する。**自動投稿は interface 設計で構造的に排除**する。
+SEO 編・広告編・mos-kit 共通基盤の上に、SNS 編 v0.1 を **CLI + Web UI** として公開済み。`@start-x-work/mos-social` として、評価・診断・構造化に限定する。**自動投稿は interface 設計で構造的に排除**する。
 
-### v0.1 で作るもの
+### v0.1 で提供するもの
 
 1. **投稿評価** — プラットフォーム別の評価手続き（生成はしない）
 2. **コンテンツカレンダー診断** — 1/10 ルール（販促比率）等の Content OS 知見
@@ -37,9 +37,9 @@ SEO 編がオーガニックの可視性を、広告編が有料の判断ログ�
 
 Social tooling skews toward posting efficiency. Schedulers and dashboards are mature, yet **which community signals connect to which decisions** still leans on tacit knowledge.
 
-### v0.1 status (2026 — started ahead of original schedule)
+### v0.1 status (2026 — published)
 
-With SEO, Ads, and `@start-x-work/mos-kit` in place, Social v0.1 shipped as CLI `@start-x-work/mos-social`, limited to evaluation and diagnosis. **Auto posting is structurally excluded** from the platform interface.
+With SEO, Ads, and `@start-x-work/mos-kit` in place, Social v0.1 is **live** as CLI + Web UI (`@start-x-work/mos-social`). Evaluation and diagnosis only. **Auto posting is structurally excluded.**
 
 ### What v0.1 ships
 
@@ -48,7 +48,9 @@ With SEO, Ads, and `@start-x-work/mos-kit` in place, Social v0.1 shipped as CLI 
 3. **Account/profile audit** — within read-only bounds
 4. **Manual export ingestion** — for API-constrained platforms
 
-Repository: [marketing-os-social](https://github.com/start-x-work/marketing-os-social)
+Repository: [marketing-os-social](https://github.com/start-x-work/marketing-os-social)  
+Web UI: [marketing-os-social.pages.dev](https://marketing-os-social.pages.dev)  
+Quickstart: [docs/QUICKSTART.md](https://github.com/start-x-work/marketing-os-social/blob/main/docs/QUICKSTART.md)
 
 ### What v0.1 deliberately excludes
 

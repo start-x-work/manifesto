@@ -17,7 +17,7 @@ Marketing-OS is a project to open marketing’s decision-making structure to the
 5. [ロードマップ](#5-ロードマップ) / [Roadmap](#5-roadmap)
 6. [参加方法](#6-参加方法) / [How to Contribute](#6-how-to-contribute)
 
-関連文書: [editor.md](./editor.md)（編集者性と OSS の接続）・[licenses.md](./licenses.md)（ライセンス選定の理由）・[master_roadmap_v3.md](./master_roadmap_v3.md)（OSS 全体ロードマップ）・[implementation_blueprint_v2.md](./implementation_blueprint_v2.md)（実装ブループリント）・[next_phase_manifesto_sync_n1_v1.md](./next_phase_manifesto_sync_n1_v1.md)（N1 フェーズ）・[next_phase_manifesto_sync_n2_v1.md](./next_phase_manifesto_sync_n2_v1.md)（運用完成度フェーズ）・**[docs/QUICKSTART.md](./docs/QUICKSTART.md)**（利用者向けクイックスタート）
+関連文書: [editor.md](./editor.md)（編集者性と OSS の接続）・[licenses.md](./licenses.md)（ライセンス選定の理由）・[master_roadmap_v3.md](./master_roadmap_v3.md)（OSS 全体ロードマップ）・[implementation_blueprint_v2.md](./implementation_blueprint_v2.md)（実装ブループリント）・[next_phase_manifesto_sync_n1_v1.md](./next_phase_manifesto_sync_n1_v1.md)（N1 フェーズ）・[next_phase_manifesto_sync_n2_v1.md](./next_phase_manifesto_sync_n2_v1.md)（運用完成度フェーズ）・**[docs/QUICKSTART.md](./docs/QUICKSTART.md)**（利用者向けクイックスタート）・**[docs/SERVICE_STRUCTURE.md](./docs/SERVICE_STRUCTURE.md)**（現行 OSS サービス構成）
 
 ---
 
@@ -47,7 +47,9 @@ We extend the chain from individual editorial practice to organizational practic
 
 Marketing-OS が扱う業務領域は広いが、OSS としてまず体系化するのは次の三本柱である。SEO、広告（Ads）、ソーシャル（Social）である。いずれも、チャネル固有の戦術だけでなく、意思決定に耐える構造（計測の置き方、優先順位の付け方、再現性の持たせ方）を扱う。
 
-SEO 編は、検索エンジン最適化に加え、LLMO／AEO のように生成 AI 経由の可視性を問う領域を含む。最初の実装集中先であり、CLI から段階的に機能を積み上げる。広告編は、運用の自動化だけでなく、配信判断と学習ログの構造化を志向する。着手はロードマップ上で後ろに置き、SEO 編で得た基盤を再利用する。SNS 編は、投稿スケジュールの効率化に留まらず、コミュニティの声を意思決定に接続する支援を目指す。順序は SEO 先行、次に広告、次に SNS である。理由は単純で、オーガニック側の診断と資産設計が、他チャネルの前提になりやすいからである。
+SEO 編は、検索エンジン最適化に加え、LLMO／AEO のように生成 AI 経由の可視性を問う領域を含む。**v0.1 は CLI + Web UI として公開済み**（2026年6月）。広告編・SNS 編も同様に v0.1 を公開済み。三本柱は `@start-x-work/mos-kit` 共通基盤の上に、診断・評価・構造化に限定して提供する。統合入口は `@start-x-work/marketing-os`（npm）と [docs/QUICKSTART.md](./docs/QUICKSTART.md)。
+
+各柱の公開形態（CLI / Web / npm）は [docs/SERVICE_STRUCTURE.md](./docs/SERVICE_STRUCTURE.md) を参照。
 
 各柱の詳細な約束と除外事項は、カテゴリ別 README に記す。
 
@@ -59,7 +61,9 @@ SEO 編は、検索エンジン最適化に加え、LLMO／AEO のように生�
 
 Marketing-OS spans a wide surface area, but we first systematize three pillars in open source: SEO, Ads, and Social. Each addresses channel-specific work while foregrounding durable structure—where to measure, how to prioritize, and how to make decisions reproducible.
 
-The SEO pillar includes classic search optimization and visibility through generative interfaces (LLMO / AEO). It is our first implementation focus, growing from a CLI outward. The Ads pillar targets structured learning logs and delivery judgment, not automation alone; it follows SEO so we can reuse foundations. The Social pillar aims to connect community signal to decisions, not merely to schedule posts. The sequence is SEO, then Ads, then Social, because organic diagnosis and asset design tend to precondition other channels.
+The SEO pillar includes classic search optimization and visibility through generative interfaces (LLMO / AEO). **v0.1 is live** as CLI + Web UI (June 2026). Ads and Social pillars are also published at v0.1. All three share `@start-x-work/mos-kit` and stay within diagnosis, evaluation, and structure—not automation. Unified entry: `@start-x-work/marketing-os` on npm and [docs/QUICKSTART.md](./docs/QUICKSTART.md).
+
+See [docs/SERVICE_STRUCTURE.md](./docs/SERVICE_STRUCTURE.md) for the current OSS service catalog.
 
 For detailed commitments and explicit non-goals, read each category README: [SEO](./seo/README.md), [Ads](./ads/README.md), [Social](./social/README.md).
 
@@ -118,11 +122,10 @@ Phase 3(SEO 編 v0.1 CLI):完了(2026年6月、当初想定より前倒し)。
   コンテンツブリーフ・キーワード意図マッピングを CLI で提供。
 Phase 4(SEO 編 Web UI):完了(2026年6月、当初想定より前倒し)。
   [Cloudflare Pages](https://marketing-os-seo.pages.dev) 上で公開。CLI と同じ診断を Web から利用可能。
-Phase 5(SEO v1.0 + 広告編準備):SEO v1.0 系統は完了(2026年6月、前倒し)。
-  `@start-x-work/mos-kit` 抽出(N4)・SEO v1.1.0 への依存切替を完了。
-  広告編は API 調査・設計ドキュメント(N3)を完了し、v0.1 実装(N5)を着手。
+Phase 5(SEO v1.0 + 広告編準備):完了(2026年6月、前倒し)。
+  `@start-x-work/mos-kit` 抽出(N4)・SEO v1.1.1 への依存切替・広告 API 調査(N3)を完了。
 Phase 6(広告編 v0.1):完了(2026年6月、前倒し)。
-  CLI `@start-x-work/mos-ads` v0.1 — キャンペーン構造診断・判断ログ・クリエイティブ評価。
+  CLI `@start-x-work/mos-ads` v0.1.2 — キャンペーン構造診断・判断ログ・クリエイティブ評価・Yahoo 読み取り。
   Web UI は [marketing-os-ads.pages.dev](https://marketing-os-ads.pages.dev) で公開(N7)。
 Phase 7(SNS 編 v0.1):完了(2026年6月、前倒し)。
   CLI `@start-x-work/mos-social` v0.1 — 投稿評価・カレンダー診断・アカウント診断。自動投稿なし。
@@ -148,11 +151,10 @@ Phase 3 (SEO pillar v0.1 CLI): complete (June 2026, ahead of the original schedu
   Published on npm as [@start-x-work/mos-seo](https://www.npmjs.com/package/@start-x-work/mos-seo). The CLI covers LLMO/AEO audit, site audit, content briefs, and keyword intent mapping.
 Phase 4 (SEO pillar Web UI): complete (June 2026, ahead of the original schedule).
   Live on [Cloudflare Pages](https://marketing-os-seo.pages.dev). The same diagnostics are available from the web.
-Phase 5 (SEO v1.0 + Ads preparation): SEO v1.0 track complete (June 2026, ahead of schedule).
-  Extracted `@start-x-work/mos-kit` (N4) and migrated SEO to v1.1.0.
-  Ads pillar: API research and architecture docs (N3) complete; v0.1 implementation (N5) started.
+Phase 5 (SEO v1.0 + Ads preparation): complete (June 2026, ahead of schedule).
+  Extracted `@start-x-work/mos-kit` (N4), migrated SEO to v1.1.1, completed Ads API research (N3).
 Phase 6 (Ads pillar v0.1): complete (June 2026, ahead of schedule).
-  CLI `@start-x-work/mos-ads` v0.1 — campaign structure diagnosis, decision logs, creative evaluation.
+  CLI `@start-x-work/mos-ads` v0.1.2 — campaign structure diagnosis, decision logs, creative evaluation, Yahoo read-only.
   Web UI live at [marketing-os-ads.pages.dev](https://marketing-os-ads.pages.dev) (N7).
 Phase 7 (Social pillar v0.1): complete (June 2026, ahead of schedule).
   CLI `@start-x-work/mos-social` v0.1 — post evaluation, calendar diagnosis, account audit. No auto posting.
