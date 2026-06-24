@@ -28,7 +28,7 @@
 
 ### 商用との関係
 
-SEO 編 OSS は素材と診断枠を開く。組織全体のワークフロー、SLA、AI CMO 的な伴走は商用 Marketing-OS 側に残す。併用は推奨されるが必須ではない。
+SEO 編 OSS は素材と診断枠を開く。組織全体のワークフロー、SLA、AI CMO（セルフサーブ SaaS）と BPO（実行代行）は商用 Marketing-OS 側に残す。併用は推奨されるが必須ではない。
 
 ---
 
@@ -57,4 +57,4 @@ Daily rank tracking, giant generic keyword databases, and competitor evaluation 
 
 ### Relation to commercial
 
-The SEO OSS pillar opens material and diagnostic scaffolds. Organization-wide workflows, SLAs, and AI CMO-style accompaniment stay in commercial Marketing-OS. Using both is welcome, not mandatory.
+The SEO OSS pillar opens material and diagnostic scaffolds. Organization-wide workflows, SLAs, AI CMO (self-serve SaaS), and BPO (execution on your behalf) stay in commercial Marketing-OS. Using both is welcome, not mandatory.

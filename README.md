@@ -73,7 +73,13 @@ For detailed commitments and explicit non-goals, read each category README: [SEO
 
 OSS で提供するものは、再利用可能な部品、診断、テンプレート、CLI／ライブラリ、そして本 Manifesto に代表される思想の言語化である。利用者はフォークや組み込みを通じて、自社のスタックやプロセスに接続できる。
 
-商用の Marketing-OS で提供するものは、意思決定の OS としての統合体験である。組織横断のワークフロー、AI CMO のような伴走インターフェース、運用 BPO、契約と SLA に裏打ちされたサポートがここに含まれる。つまり、OSS は「素材と型」、商用は「運用と責任の束ね方」という住み分けである。
+商用の Marketing-OS は、意思決定の OS としての統合体験を提供する。提供形態は二つあり、両者は並列であって階層関係にはない。一つは **AI CMO** — マーケティングの意思決定を支援するセルフサーブ SaaS である。もう一つは **BPO** — 実行を人が代行するサービスである。BPO は AI CMO の上位プランではなく、別軸の選択肢である。
+
+AI CMO は「実行しない頭脳」として設計される。診断・評価・優先順位付け・ブリーフまでを担い、自動投稿・自動入稿・自動最適化のような自律実行は行わない。実際の実行は利用者自身が担うか、委ねたい場合に限り BPO（人の手）が引き受ける。自動実行をしないことは制約ではなく、意思決定の所在を利用者側に残すための設計上の選択である。
+
+AI CMO のプランは **LIGHT / STANDARD / GROWTH / PRO** の 4 階層で固定されている。ここで肝心なのは、使える機能の「形」を決めるのはプランではなくビジネスタイプ（現在 9 種）だという点である。プランが変えるのはクォータ（利用量の上限）であって、機能の種類ではない。上位プランへ移っても「別の頭脳」に切り替わるのではなく、同じ頭脳をより多く使えるようになる。
+
+つまり、OSS は「素材と型」、商用は「運用と責任の束ね方」という住み分けである。
 
 この線引きは二つの価値を同時に守る。第一に、競合が商用成果物を無条件に取り込んで再販する余地を狭め、持続可能な開発投資を守る。第二に、利用者がベンダーロックなき入り口を持てるようにする。両方を使う場合のメリットは明確である。OSS で早期検証と内製接続を行い、商用で組織規模の運用と責任分界を引き受ける。逆に、OSS のみで十分なチームもある。その選択を尊重する。
 
@@ -83,7 +89,13 @@ OSS で提供するものは、再利用可能な部品、診断、テンプレ�
 
 Open source supplies reusable parts, diagnostics, templates, CLIs and libraries, and conceptual writing like this Manifesto. Adopters can fork or embed and connect to their own stack and process.
 
-Commercial Marketing-OS supplies the integrated experience of a decision OS: cross-functional workflows, interfaces such as AI CMO, BPO operations, and support backed by contracts and SLAs. In short, open source offers material and patterns; commercial offers how operations and accountability are bundled.
+Commercial Marketing-OS supplies the integrated experience of a decision OS through two parallel offerings—neither one a tier of the other. The first is **AI CMO**, a self-serve SaaS that supports marketing decisions. The second is **BPO**, where people carry out execution on your behalf. BPO is not a higher plan of AI CMO; it is a separate axis of engagement.
+
+AI CMO is designed as a "brain that does not execute." It handles diagnosis, evaluation, prioritization, and briefs, but performs no autonomous execution—no auto-posting, auto-uploading, or auto-optimization. Actual execution stays with the user, or, only when delegated, is taken on by BPO (human hands). Not executing is not a limitation; it is a deliberate design choice that keeps ownership of decisions on the user's side.
+
+AI CMO plans are fixed at four tiers: **LIGHT / STANDARD / GROWTH / PRO**. The key point is that the *shape* of available features is determined by business type (currently nine), not by plan. Plans change quotas (usage ceilings), not the kinds of features. Moving to a higher plan does not swap in "a different brain"; it lets you use the same brain more.
+
+In short, open source offers material and patterns; commercial offers how operations and accountability are bundled.
 
 This boundary protects two values at once. First, it narrows the path for competitors to lift commercial outcomes wholesale for resale, preserving sustainable investment. Second, it preserves a vendor-lock-in-free entry for adopters. Using both is straightforward: validate and connect internally with OSS, then scale operations and responsibility with commercial services. Some teams will thrive on OSS alone—we respect that.
 

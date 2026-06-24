@@ -34,7 +34,13 @@ Marketing-OS OSS の公開形態を、利用者向けに整理した一覧です
 | OSS（本リポ群） | 商用 [Marketing-OS](https://marketing-os.jp) |
 |---|---|
 | CLI / Web / ライブラリ | 組織横断ワークフロー |
-| BYOK（利用者自身のキー） | AI CMO 伴走・運用 BPO |
+| BYOK（利用者自身のキー） | AI CMO（セルフサーブ SaaS）と BPO（実行代行）— 並列・非階層 |
 | 診断・評価・構造化 | SLA 付きサポート |
+
+商用側の構成（補足）:
+
+- **AI CMO**（セルフサーブ SaaS）と **BPO**（実行代行）は並列の選択肢で、階層関係にはない。
+- AI CMO は「実行しない頭脳」。診断・評価・優先順位付け・ブリーフまでで、自動投稿・自動入稿・自動最適化はしない。
+- プランは **LIGHT / STANDARD / GROWTH / PRO** の 4 階層固定。機能の「形」はビジネスタイプ（現在 9 種）が決め、プランはクォータのみを変える。
 
 詳細: [README 第3章](../README.md#3-marketing-os-との境界線) · [QUICKSTART](./QUICKSTART.md)
