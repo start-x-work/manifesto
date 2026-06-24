@@ -24,7 +24,7 @@
 
 ### 技術選択の理由
 
-**TypeScript** は型によりインタフェース契約を共有しやすく、CLI と将来の Web UI を同一言語で接続しやすい。**Cloudflare**（Workers／Pages／関連ストア）は、エッジでの実行と配布を単純化し、利用者が自分の環境に近い形で試せる。**Gemini** は現行プロダクトとの整合と、マルチモーダル文脈での診断表現の自由度を考慮して採用する。モデル固定は恒久方針ではない。抽象層を挟み、将来の差し替えを妨げない設計にする。
+**TypeScript** は型によりインタフェース契約を共有しやすく、CLI と Web UI を同一言語で接続しやすい。**Cloudflare**（Workers／Pages／関連ストア）は、エッジでの実行と配布を単純化し、利用者が自分の環境に近い形で試せる。**Gemini** は現行プロダクトとの整合と、マルチモーダル文脈での診断表現の自由度を考慮して採用する。モデル固定は恒久方針ではない。抽象層を挟み、将来の差し替えを妨げない設計にする。
 
 ### 商用との関係
 
@@ -53,7 +53,7 @@ Daily rank tracking, giant generic keyword databases, and competitor evaluation 
 
 ### Why TypeScript, Cloudflare, and Gemini
 
-**TypeScript** shares interface contracts cleanly across CLI and a future web UI. **Cloudflare** simplifies edge execution and distribution so adopters can try flows close to their own environments. **Gemini** aligns with current product practice and offers flexibility for diagnostic narratives across modalities. Model choice is not permanent; we will insert an abstraction layer so swaps remain feasible.
+**TypeScript** shares interface contracts cleanly across CLI and Web UI. **Cloudflare** simplifies edge execution and distribution so adopters can try flows close to their own environments. **Gemini** aligns with current product practice and offers flexibility for diagnostic narratives across modalities. Model choice is not permanent; we will insert an abstraction layer so swaps remain feasible.
 
 ### Relation to commercial
 
