@@ -319,7 +319,7 @@ Success and retreat criteria live in operational documentation. Here we only com
 
 **地図への貢献。** 第 2.5 章の分類（四つの型）は固定ではない。既存の型に収まらないツールの構造や、型の境界にまたがる事例に気づいた場合は、Issue での報告を歓迎する。ただし、この地図は網羅カタログではない。個別のサービス名・ベンダー名の掲載要望には応じず、いただいた知見は名前を持たない「型」と「構造」に一般化したうえで統合する。
 
-日本語と英語のどちらでも歓迎します。言語が混在するスレッドも問題ありません。行動規範は Organization の Contributor Covenant（各リポの `.github` 経由で参照）に従います。
+はじめての方は [CONTRIBUTING.md](./CONTRIBUTING.md)（貢献の手順と執筆上の約束）をご覧ください。日本語と英語のどちらでも歓迎します。言語が混在するスレッドも問題ありません。行動規範は [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)（Contributor Covenant 2.1）に従います。セキュリティに関わる報告は [SECURITY.md](./SECURITY.md) の手順で。
 
 商用 Marketing-OS の契約・価格・個別支援については、[marketing-os.jp](https://marketing-os.jp) 側の導線をご利用ください。
 
@@ -329,7 +329,7 @@ Four primary paths: **Stars** signal interest and help with release awareness. *
 
 **Contributing to the Map.** The taxonomy in Chapter 2.5 (the four types) is not frozen. If you encounter tool structures that fit none of the types, or cases straddling their boundaries, Issue reports are welcome. Note, however, that the map is not an exhaustive catalog: we do not list individual service or vendor names, and contributed insight is generalized into unnamed types and structures before being integrated.
 
-Japanese and English are both welcome; mixed-language threads are fine. We follow the organization’s Contributor Covenant (via each repo’s `.github` links).
+New here? Start with [CONTRIBUTING.md](./CONTRIBUTING.md) (how to contribute and the writing constraints). Japanese and English are both welcome; mixed-language threads are fine. We follow the [Code of Conduct](./CODE_OF_CONDUCT.md) (Contributor Covenant 2.1). For security-related reports, see [SECURITY.md](./SECURITY.md).
 
 For contracts, pricing, and tailored support for commercial Marketing-OS, please use the paths published on [marketing-os.jp](https://marketing-os.jp).
 
