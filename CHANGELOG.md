@@ -16,6 +16,10 @@ This file records notable changes to the Manifesto repository. Per the transpare
   - Added a "Contributing to the Map" note to Chapter 6: type proposals and boundary cases are welcome via Issues, while cataloging individual service names is explicitly out of scope.
 - `CHANGELOG.md` を新設。以後、ロードマップ・本文の変更記録はここに集約する。
   - Established this `CHANGELOG.md`; roadmap and body changes are recorded here from now on.
+- OSS 参加動線の受け皿を整備: `CONTRIBUTING.md`・`CODE_OF_CONDUCT.md`（Contributor Covenant 2.1）・`SECURITY.md` を新設。第 4 章（Contributor Covenant 遵守・セキュリティ報告への応答）と第 6 章（参加方法）の約束を実ファイルで裏付けた。あわせて「地図への貢献」を受ける Issue テンプレート（`.github/ISSUE_TEMPLATE/map_contribution.yml`）を追加。
+  - Added the receiving surfaces for OSS participation: `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md` (Contributor Covenant 2.1), and `SECURITY.md`, backing the promises in Chapters 4 and 6 with real files. Added an Issue template (`.github/ISSUE_TEMPLATE/map_contribution.yml`) to receive "contributions to the map."
+- `master_roadmap_v3.md` を同期: ドキュメント体系表に `CHANGELOG.md` と第 2.5 章を登録し、バージョン管理に v3.2 を追記（理由付き）。索引が本文更新に追随しない無言の陳腐化を防ぐ。
+  - Synced `master_roadmap_v3.md`: registered `CHANGELOG.md` and Chapter 2.5 in the document table and added a v3.2 version entry (with rationale), so the index does not silently fall behind the body.
 
 ## 2026-06（さかのぼり記録 / retrospective）
 

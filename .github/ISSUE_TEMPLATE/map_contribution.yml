@@ -1,0 +1,50 @@
+name: 🗺️ 地図への貢献 / Contribute to the Map
+description: 型の追加提案・境界事例の報告 / Propose a type or report a boundary case for "The Map of AI Marketing"
+labels: ["map"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        第 2.5 章「マーケAIの地図」への貢献フォームです。四つの型（実行 / 生成 / 観測 / 判断構造化）に収まらない構造や、型の境界にまたがる事例を歓迎します。
+        This form contributes to Chapter 2.5, "The Map of AI Marketing." We welcome structures that fit none of the four types (execution / generation / observation / decision-structuring), or cases straddling their boundaries.
+
+        **お願い / Please note:** この地図は網羅カタログではありません。**個別のサービス名・ベンダー名は掲載しません。** いただいた知見は、名前を持たない「型」と「構造」に一般化したうえで統合します。名前ではなく構造で記述してください。
+        The map is not an exhaustive catalog. **We do not publish individual service or vendor names.** Contributions are integrated as unnamed types and structures. Please describe by structure, not by name.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 貢献の種類 / Kind of contribution
+      options:
+        - 新しい型の提案 / Proposing a new type
+        - 境界事例の報告（複数の型にまたがる） / A boundary case (straddles multiple types)
+        - 既存の型の定義への補足・修正 / Refinement to an existing type's definition
+    validations:
+      required: true
+  - type: textarea
+    id: structure
+    attributes:
+      label: 構造の記述 / Structural description
+      description: そのツール群は「何を代行し、何を手元に残す」のか。入力と出力、判断の所在を、名前を出さずに記述してください。 / What does this class of tools take over, and what does it leave in your hands? Describe inputs, outputs, and where judgment resides—without naming products.
+    validations:
+      required: true
+  - type: textarea
+    id: why-not-fit
+    attributes:
+      label: なぜ既存の四つの型に収まらないか / Why it doesn't fit the four types
+      description: 実行 / 生成 / 観測 / 判断構造化 のどれとも異なる点、または複数にまたがる点。 / How it differs from execution / generation / observation / decision-structuring, or how it straddles them.
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: 固有のリスク（任意） / Inherent risk (optional)
+      description: その型に固有の、構造的なリスクや失われやすいもの。優劣の断定ではなく構造として。 / Any structural risk inherent to the type—described as structure, not as a verdict of superiority.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: 背景・前提となる読み物（任意） / Context or prior reading (optional)
+      description: 一般化された参照や前提。固有名は不要です。 / Generalized references or context. No proper names needed.
+    validations:
+      required: false

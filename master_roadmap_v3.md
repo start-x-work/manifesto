@@ -30,6 +30,8 @@
 | [`n0_execution_runbook_v1.md`](./n0_execution_runbook_v1.md) | 環境準備〜N0(SEO CLI公開) | 実行手順書 |
 | [`next_phase_manifesto_sync_n1_v1.md`](./next_phase_manifesto_sync_n1_v1.md) | Task A(manifesto同期) + Task B(N1 SEO v1.0) | 完了 |
 | [`next_phase_manifesto_sync_n2_v1.md`](./next_phase_manifesto_sync_n2_v1.md) | Task A(manifesto同期) + Task B(N10/QUICKSTART) | 次フェーズ指示書 |
+| [`CHANGELOG.md`](./CHANGELOG.md) | Manifesto 本文・ロードマップの変更履歴(理由付き) | 運用中 |
+| `README.md` 第2.5章「マーケAIの地図」 | マーケAIツールの分類学(名前なし・4つの型) | ✓ 追加(2026年7月) |
 | **`master_roadmap_v3.md`(本書)** | 全体索引・進捗 | — |
 
 ---
@@ -239,6 +241,7 @@
 - v1.0: 2026年5月14日(Phase 2-6 統合、推奨技術)
 - v2.0: 2026年5月14日(技術確定、Phase 3詳細化、事業数値削除)
 - v3.1: 2026年6月21日(N9 npm・BYOK・Yahoo・QUICKSTART 完了を反映。クリティカルパス完了宣言)
+- v3.2: 2026年7月4日(Manifesto 第2.5章「マーケAIの地図」の追加と `CHANGELOG.md` 新設を本書のドキュメント体系に反映。理由: Manifesto 本文が更新されたのに本書の索引が旧状態のままだと、透明性原則——ロードマップ変更は理由を添えて公開する——に自ら反するため。変更履歴の単一ソースは `CHANGELOG.md`、ロードマップ現況は Manifesto README 第5章、詳細位相は本書、という役割分担で二重管理を避ける)
 
 ---
 
