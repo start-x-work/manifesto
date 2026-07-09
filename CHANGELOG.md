@@ -6,6 +6,13 @@ This file records notable changes to the Manifesto repository. Per the transpare
 
 ---
 
+## 2026-07-09
+
+- ロードマップ（第 5 章）と `master_roadmap_v3.md` に「エージェント連携（read専用・MCP）」を次フェーズの計画中ノードとして追加。理由: 商用 Marketing-OS 側で MCP サーバー実装（OAuth 2.1 + PKCE・readOnly-first・書き込みツールを型レベルで定義しない設計）が次の実装対象として起票されたため、着手前の段階から公開ロードマップに記載する（透明性原則）。
+  - Added "Agent integration (read-only, MCP)" to the Roadmap (Ch. 5) and `master_roadmap_v3.md` as a planned, not-yet-started next-phase node. Rationale: an MCP server implementation (OAuth 2.1 + PKCE, readOnly-first, write tools never defined at the type level) has been proposed as the next build item on the commercial Marketing-OS side; per the transparency principle, we record it on the public roadmap before work begins.
+  - 明記した点: OSS 三本柱（SEO/広告/SNS）の診断 CLI・Web は npm 公開・稼働確認済みのままであり、本更新はこれらの完了状態を変更しない。別リポ（商用 Marketing-OS）側の起票情報を理由に、検証済みの公開実績を「準備中」へ書き換えることはしていない。
+  - Noted explicitly: the three OSS pillars' diagnostic CLI/Web remain published on npm and verified working; this update does not change their completed status. We did not roll back a verified public shipping status to "in preparation" on the strength of a proposal for a separate (commercial) repository.
+
 ## 2026-07-04
 
 - 第 2.5 章「マーケAIの地図 / The Map of AI Marketing」を追加。理由: 三本柱（第 2 章）と境界線（第 3 章）の間に、マーケティング AI ツール群全体の中での自らの位置を示す層が欠けていたため。「地図を描いてから、自分たちの位置を示す」流れに揃えた。固有のサービス名を挙げない分類学（実行型・生成型・観測型・判断構造化型）として記述している。

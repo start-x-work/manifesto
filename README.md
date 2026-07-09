@@ -267,12 +267,14 @@ Phase 7(SNS 編 v0.1):完了(2026年6月、前倒し)。
   実装リポ: [marketing-os](https://github.com/start-x-work/marketing-os)。
 利用者向けクイックスタート: [docs/QUICKSTART.md](./docs/QUICKSTART.md)（CLI・Web BYOK・GSC/Yahoo 連携手順）。
 運用設計(BYOK): 各 Web UI の AI API キー・GSC OAuth・Yahoo トークンは利用者がブラウザに保存（sessionStorage）。運営側の Cloudflare AI Secrets は不要。
+エージェント連携(read専用・MCP):計画中(2026年7月時点、着手前)。
+  商用 Marketing-OS 側に、KPI・意思決定ログなどを read-only で参照できる MCP サーバーを追加する計画。OAuth 2.1 + PKCE、`mcp:read` スコープのみを発行し、書き込みツールは型レベルで定義しない(readOnly-first)。OSS 三本柱の診断 CLI・Web とは別レイヤーであり、公開済み機能への変更はない。
 
 粗い位相と Gate の詳細は [Start-X OSS マスターロードマップ v3.0](./master_roadmap_v3.md) も参照。月固定のスケジュールではなく、Gate（完成度）で進行を判断する。優先順位が入れ替わる場合は、ロードマップ上で理由を明示する。
 
 日程は前提であり変更されうる。前倒し・後ろ倒しいずれの場合も、判断の理由をこのロードマップ上で明示する。今回 Phase 3・4 を前倒しできたのは、SEO 編の実装が想定より順調に進んだためである。Phase 5〜7 と統合 CLI も同じ理由——共通基盤（mos-kit）の抽出と実装の並列化により、各編が SEO 編の土台を再利用できたこと——で前倒しとなった。
 
-現在地（2026年7月）: OSS 三本柱と統合 CLI の v0.1 スコープは完了。次フェーズは、(1) 横断 docs サイト（E3・任意・未着手。現状は QUICKSTART 群で代替）、(2) 三編 Web の共通 UI 抽出（E2・任意）、(3) コミュニティ運用の継続（metrics 週次記録・Issue / Discussion 対応）である。いずれも日程は前提であり変更されうる。
+現在地（2026年7月）: OSS 三本柱と統合 CLI の v0.1 スコープは完了。次フェーズは、(1) 横断 docs サイト（E3・任意・未着手。現状は QUICKSTART 群で代替）、(2) 三編 Web の共通 UI 抽出（E2・任意）、(3) コミュニティ運用の継続（metrics 週次記録・Issue / Discussion 対応）、(4) 商用 Marketing-OS 側でのエージェント連携（read専用・MCP、計画中・着手前）である。いずれも日程は前提であり変更されうる。
 
 変更履歴: ロードマップと本文の変更は、理由を添えて [CHANGELOG.md](./CHANGELOG.md) に記録する。直近では 2026年7月4日に第 2.5 章「マーケAIの地図」を追加した（理由は CHANGELOG を参照）。
 
@@ -300,12 +302,14 @@ Unified CLI (N9): complete (June 2026).
   Repository: [marketing-os](https://github.com/start-x-work/marketing-os).
 User quickstart: [docs/QUICKSTART.md](./docs/QUICKSTART.md) (CLI, Web BYOK, GSC/Yahoo).
 Operations (BYOK): AI keys, GSC OAuth, and Yahoo tokens are stored in the user’s browser (sessionStorage). No operator-side Cloudflare AI secrets required.
+Agent integration (read-only, MCP): planned (as of July 2026, not yet started).
+  We plan to add an MCP server on the commercial Marketing-OS side that exposes KPIs and decision logs read-only. OAuth 2.1 + PKCE, issuing only an `mcp:read` scope; write tools are not defined at the type level (readOnly-first). This is a separate layer from the OSS pillars' diagnostic CLI/Web — the already-published functionality is unchanged.
 
 For gates and finer-grained tracking, see the [Start-X OSS Master Roadmap v3.0](./master_roadmap_v3.md). We track progress by gates rather than fixed monthly dates. If priorities shift, we will state the reason on the roadmap itself.
 
 Dates are assumptions and may change. Whenever we move ahead or defer, we will explain the rationale here. Phase 3 and 4 shipped early because SEO implementation progressed faster than expected. Phases 5–7 and the unified CLI shipped early for the same reason: extracting the shared foundation (mos-kit) and parallelizing implementation let each pillar reuse the SEO groundwork.
 
-Where we are (July 2026): the v0.1 scope for the three OSS pillars and the unified CLI is complete. Next up: (1) a cross-repository docs site (E3, optional, not started; QUICKSTART docs serve in the meantime), (2) shared web UI extraction across the three pillars (E2, optional), and (3) ongoing community operations (weekly metrics, Issues / Discussions). All dates remain assumptions and may change.
+Where we are (July 2026): the v0.1 scope for the three OSS pillars and the unified CLI is complete. Next up: (1) a cross-repository docs site (E3, optional, not started; QUICKSTART docs serve in the meantime), (2) shared web UI extraction across the three pillars (E2, optional), (3) ongoing community operations (weekly metrics, Issues / Discussions), and (4) agent integration on the commercial Marketing-OS side (read-only, MCP; planned, not yet started). All dates remain assumptions and may change.
 
 Change log: roadmap and body changes are recorded with rationale in [CHANGELOG.md](./CHANGELOG.md). Most recently, Chapter 2.5 "The Map of AI Marketing" was added on July 4, 2026 (see CHANGELOG for the rationale).
 
