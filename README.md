@@ -265,8 +265,8 @@ Phase 7(SNS 編 v0.1):完了(2026年6月、前倒し)。
 統合 CLI(N9):完了(2026年6月)。
   `@start-x-work/marketing-os` v0.1.1 — SEO / 広告 / SNS を `marketing-os <pillar> <command>` で束ねる。
   実装リポ: [marketing-os](https://github.com/start-x-work/marketing-os)。
-クリエイティブ編(mos-creative):v0.1 コード公開(2026年9月)。
-  ブリーフ→生成→表現ガード→人の承認証跡までをローカルで支援する。ローカルファースト・下書き優先で、最終判断は人に残す。実装リポ: [mos-creative](https://github.com/start-x-work/mos-creative)。npm 公開は準備中。
+クリエイティブ編(mos-creative):v0.1 公開(2026年9月)。
+  ブリーフ→生成→表現ガード→人の承認証跡までをローカルで支援する。ローカルファースト・下書き優先で、最終判断は人に残す。実装リポ: [mos-creative](https://github.com/start-x-work/mos-creative)。npm 公開済み(`@start-x-work/mos-creative`)。
 動画編(mos-video):v1.0 公開(2026年9月)。
   「手渡し0円パイプライン」。企画・台本・画像は人が手渡し、検証・音声・字幕・演出・全SNSサイズ書き出し・納品をローカルで処理する。自動投稿はしない(理由は各リポの `docs/12_why_no_autopost.md`)。Python 実装。実装リポ: [mos-video](https://github.com/start-x-work/mos-video)。
 利用者向けクイックスタート: [docs/QUICKSTART.md](./docs/QUICKSTART.md)（CLI・Web BYOK・GSC/Yahoo 連携手順）。
@@ -278,7 +278,7 @@ Phase 7(SNS 編 v0.1):完了(2026年6月、前倒し)。
 
 日程は前提であり変更されうる。前倒し・後ろ倒しいずれの場合も、判断の理由をこのロードマップ上で明示する。今回 Phase 3・4 を前倒しできたのは、SEO 編の実装が想定より順調に進んだためである。Phase 5〜7 と統合 CLI も同じ理由——共通基盤（mos-kit）の抽出と実装の並列化により、各編が SEO 編の土台を再利用できたこと——で前倒しとなった。
 
-現在地（2026年9月）: OSS 三本柱（SEO / 広告 / SNS）と統合 CLI の v0.1 スコープは完了済み。加えて、クリエイティブ編（mos-creative v0.1・コード公開）と動画編（mos-video v1.0・公開）を新たに公開した。次フェーズは、(1) 横断 docs サイト（E3・任意・未着手。現状は QUICKSTART 群で代替）、(2) 三編 Web の共通 UI 抽出（E2・任意）、(3) コミュニティ運用の継続（metrics 週次記録・Issue / Discussion 対応）、(4) 商用 Marketing-OS 側でのエージェント連携（read専用・MCP、計画中・着手前）、(5) mos-creative の npm 公開である。いずれも日程は前提であり変更されうる。
+現在地（2026年9月）: OSS 三本柱（SEO / 広告 / SNS）と統合 CLI の v0.1 スコープは完了済み。加えて、クリエイティブ編（mos-creative v0.1・npm 公開済み）と動画編（mos-video v1.0・公開）を新たに公開した。次フェーズは、(1) 横断 docs サイト（E3・任意・未着手。現状は QUICKSTART 群で代替）、(2) 三編 Web の共通 UI 抽出（E2・任意）、(3) コミュニティ運用の継続（metrics 週次記録・Issue / Discussion 対応）、(4) 商用 Marketing-OS 側でのエージェント連携（read専用・MCP、計画中・着手前）である。いずれも日程は前提であり変更されうる。
 
 変更履歴: ロードマップと本文の変更は、理由を添えて [CHANGELOG.md](./CHANGELOG.md) に記録する。直近では 2026年9月にクリエイティブ編（mos-creative v0.1）と動画編（mos-video v1.0）の公開をロードマップへ反映した（理由は CHANGELOG を参照）。
 
@@ -305,7 +305,7 @@ Unified CLI (N9): complete (June 2026).
   `@start-x-work/marketing-os` v0.1.1 — `marketing-os <pillar> <command>` across SEO, Ads, and Social.
   Repository: [marketing-os](https://github.com/start-x-work/marketing-os).
 Creative pillar (mos-creative): v0.1 code published (September 2026).
-  Supports brief → generation → expression guard → human approval trail, locally. Local-first, draft-first; the final call stays with a person. Repository: [mos-creative](https://github.com/start-x-work/mos-creative). npm publish is pending.
+  Supports brief → generation → expression guard → human approval trail, locally. Local-first, draft-first; the final call stays with a person. Repository: [mos-creative](https://github.com/start-x-work/mos-creative). Published on npm (`@start-x-work/mos-creative`).
 Video pillar (mos-video): v1.0 published (September 2026).
   A "hand-off, zero-marginal-cost pipeline." People hand off the plan, script, and images; validation, audio, subtitles, effects, all-SNS-size export, and delivery run locally. No auto posting (see each repo's `docs/12_why_no_autopost.md` for why). Python. Repository: [mos-video](https://github.com/start-x-work/mos-video).
 User quickstart: [docs/QUICKSTART.md](./docs/QUICKSTART.md) (CLI, Web BYOK, GSC/Yahoo).
@@ -317,7 +317,7 @@ For gates and finer-grained tracking, see the [Start-X OSS Master Roadmap v3.0](
 
 Dates are assumptions and may change. Whenever we move ahead or defer, we will explain the rationale here. Phase 3 and 4 shipped early because SEO implementation progressed faster than expected. Phases 5–7 and the unified CLI shipped early for the same reason: extracting the shared foundation (mos-kit) and parallelizing implementation let each pillar reuse the SEO groundwork.
 
-Where we are (September 2026): the v0.1 scope for the three OSS pillars (SEO / Ads / Social) and the unified CLI is complete. In addition, we published the Creative pillar (mos-creative v0.1, code public) and the Video pillar (mos-video v1.0). Next up: (1) a cross-repository docs site (E3, optional, not started; QUICKSTART docs serve in the meantime), (2) shared web UI extraction across the three pillars (E2, optional), (3) ongoing community operations (weekly metrics, Issues / Discussions), (4) agent integration on the commercial Marketing-OS side (read-only, MCP; planned, not yet started), and (5) the npm publish of mos-creative. All dates remain assumptions and may change.
+Where we are (September 2026): the v0.1 scope for the three OSS pillars (SEO / Ads / Social) and the unified CLI is complete. In addition, we published the Creative pillar (mos-creative v0.1, on npm) and the Video pillar (mos-video v1.0). Next up: (1) a cross-repository docs site (E3, optional, not started; QUICKSTART docs serve in the meantime), (2) shared web UI extraction across the three pillars (E2, optional), (3) ongoing community operations (weekly metrics, Issues / Discussions), and (4) agent integration on the commercial Marketing-OS side (read-only, MCP; planned, not yet started). All dates remain assumptions and may change.
 
 Change log: roadmap and body changes are recorded with rationale in [CHANGELOG.md](./CHANGELOG.md). Most recently, in September 2026 we reflected the release of the Creative pillar (mos-creative v0.1) and the Video pillar (mos-video v1.0) in the roadmap (see CHANGELOG for the rationale).
 

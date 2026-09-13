@@ -11,7 +11,9 @@ This file records notable changes to the Manifesto repository. Per the transpare
 - ロードマップ（第 5 章・日英）に、クリエイティブ編（`mos-creative` v0.1・コード公開）と動画編（`mos-video` v1.0・公開）を新ノードとして追加。「現在地」を 2026年9月に更新し、次フェーズに「mos-creative の npm 公開」を追記。理由: 両リポジトリを 2026 年 9 月に公開したため、透明性原則（第 4 章）に基づき公開ロードマップへ反映する。
   - Added the Creative pillar (`mos-creative` v0.1, code public) and the Video pillar (`mos-video` v1.0, published) as new nodes in the Roadmap (Ch. 5, JP and EN). Updated "where we are" to September 2026 and added "npm publish of mos-creative" to the next phases. Rationale: both repositories were published in September 2026; per the transparency principle (Ch. 4), we record them on the public roadmap.
   - 明記した点: `mos-creative` は現時点でコード公開のみ（npm 公開は準備中）、`mos-video` は自動投稿を持たない設計（実行系を追加しない境界＝各リポの `docs/12_why_no_autopost.md`）。実態に反する完了・自動化表現は用いていない。
-  - Noted explicitly: `mos-creative` is code-public only for now (npm publish pending), and `mos-video` has no auto-posting by design (the boundary of not adding an execution layer — see each repo's `docs/12_why_no_autopost.md`). We avoid completion or automation claims that would misrepresent the actual state.
+  - Noted explicitly: `mos-video` has no auto-posting by design (the boundary of not adding an execution layer — see each repo's `docs/12_why_no_autopost.md`). We avoid completion or automation claims that would misrepresent the actual state.
+- `mos-creative` を npm 公開（`@start-x-work/mos-creative@0.1.0`, Apache-2.0）。ロードマップ・本文の「npm 準備中／コード公開のみ」表記を「npm 公開済み」に更新し、次フェーズ一覧から「mos-creative の npm 公開」を削除。理由: 実際に公開が完了したため、表記を実態に合わせる。
+  - Published `mos-creative` to npm (`@start-x-work/mos-creative@0.1.0`, Apache-2.0). Updated the roadmap/body wording from "npm pending / code-public only" to "published on npm" and dropped "npm publish of mos-creative" from the next-phase list. Rationale: the publish is now done, so the wording is brought in line with reality.
 
 ## 2026-07-09
 
