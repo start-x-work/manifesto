@@ -6,6 +6,13 @@ This file records notable changes to the Manifesto repository. Per the transpare
 
 ---
 
+## 2026-09-28（SEO 編 v1.2 の反映）
+
+- ロードマップ（第 5 章・日英）に「SEO 編 v1.2（N1）」を追加。理由：`@start-x-work/mos-seo` 1.2.0 と `@start-x-work/marketing-os-seo-core` 1.2.0（ライブラリの初公開）を npm に公開し、公開状態とロードマップを一致させるため（manifesto 指示書 M1、marketing-os-seo 指示書 N1-5）。
+  - 内容：監査ロジックの正本を OSS 側に集約し（GEO／LLMO 監査は `./geo` サブパス）、商用 Marketing-OS は npm 依存として取り込む。あわせて、公開 HTTPS に限る安全な取得（SSRF 対策）、AI クローラの「検索・引用系／学習系」の区分、`Content-Signal` の解析、`llms.txt` の草案出力（命令ではなく案内）を追加した。
+  - 明記した点：商用側の取り込み（N1-4）は Marketing-OS リポで進行中で、本更新は OSS 側の公開状態だけを反映する。
+  - Added "SEO pillar v1.2 (N1)" to the Roadmap (Ch. 5, JP/EN). Rationale: `@start-x-work/mos-seo` 1.2.0 and `@start-x-work/marketing-os-seo-core` 1.2.0 (first publish of the library) are on npm, so the roadmap is brought in line with the published state (manifesto spec M1; marketing-os-seo spec N1-5). The commercial-side adoption (N1-4) is in progress in the Marketing-OS repository; this update reflects only the OSS publication state.
+
 ## 2026-09-27（manifesto 実装指示書 v1.1：M1・M2・M3）
 
 - **M1（ロードマップ実態同期）** ロードマップ（第 5 章・日英）に需要予測 `forecast-manifesto` を「設計と編集」シリーズ第2弾として追加（公開済み・継続開発、`@forecast-manifesto/*`、Apache-2.0、外部依存ゼロ・シード固定の計算方法を公開）。「現在地」にも追記。理由: 実態（npm 公開・継続開発）をロードマップに反映するため（透明性原則）。SEO v1.0・read専用 MCP・広告/SNS の記述は現状のまま（実態と一致）。

@@ -295,6 +295,8 @@ Phase 7(SNS 編 v0.1):完了(2026年6月、前倒し)。
   「手渡し0円パイプライン」。企画・台本・画像は人が手渡し、検証・音声・字幕・演出・全SNSサイズ書き出し・納品をローカルで処理する。自動投稿はしない(理由は各リポの `docs/12_why_no_autopost.md`)。Python 実装。実装リポ: [mos-video](https://github.com/start-x-work/mos-video)。
 需要予測(forecast-manifesto):公開済み・継続開発。「設計と編集」シリーズ第2弾。
   需要予測・顧客生涯価値の「計算方法」を公開する OSS(Apache-2.0)。NBD の時間換算・度数分布からの最尤推定・適合度検定・区間推定などを、シード固定・外部依存ゼロで実装する。結果ではなく方法を検証可能にする——第 2.5 章でいう「計算の中身を公開する型」を体現する。npm 公開済み(`@forecast-manifesto/*`)。実装リポ: [forecast-manifesto](https://github.com/start-x-work/forecast-manifesto)。
+SEO 編 v1.2(N1):公開(2026年9月)。
+  監査ロジックの正本を OSS 側に集約した。GEO／LLMO 監査を `@start-x-work/marketing-os-seo-core`（今回が初公開・`./geo` サブパス）に置き、商用 Marketing-OS はこれを npm 依存として取り込む（コードの複製による二重保守をやめる）。あわせて、取得先を公開 HTTPS に限る安全な取得（SSRF 対策）、AI クローラの「検索・引用系／学習系」の区分（四半期ごとに見直し）、`Content-Signal` の解析、`llms.txt` の草案出力（命令ではなく案内として出す）を追加した。CLI `@start-x-work/mos-seo` v1.2.0。
 利用者向けクイックスタート: [docs/QUICKSTART.md](./docs/QUICKSTART.md)（CLI・Web BYOK・GSC/Yahoo 連携手順）。
 運用設計(BYOK): 各 Web UI の AI API キー・GSC OAuth・Yahoo トークンは利用者がブラウザに保存（sessionStorage）。運営側の Cloudflare AI Secrets は不要。
 エージェント連携(read専用・MCP):計画中(2026年7月時点、着手前)。
@@ -306,7 +308,7 @@ Phase 7(SNS 編 v0.1):完了(2026年6月、前倒し)。
 
 現在地（2026年9月）: OSS 三本柱（SEO / 広告 / SNS）と統合 CLI の v0.1 スコープは完了済み。加えて、クリエイティブ編（mos-creative v0.1・npm 公開済み）と動画編（mos-video v1.0・公開）を新たに公開した。別系統の「設計と編集」シリーズ第2弾として、需要予測・顧客生涯価値の計算方法を公開する forecast-manifesto も公開・継続開発中である。次フェーズは、(1) 横断 docs サイト（E3・任意・未着手。現状は QUICKSTART 群で代替）、(2) 三編 Web の共通 UI 抽出（E2・任意）、(3) コミュニティ運用の継続（metrics 週次記録・Issue / Discussion 対応）、(4) 商用 Marketing-OS 側でのエージェント連携（read専用・MCP、計画中・着手前）である。いずれも日程は前提であり変更されうる。
 
-変更履歴: ロードマップと本文の変更は、理由を添えて [CHANGELOG.md](./CHANGELOG.md) に記録する。直近では 2026年9月に、需要予測（forecast-manifesto）のロードマップ追加、地図章（第 2.5 章）への「二つの観点」の追加、境界章（第 3 章）での判断のタスク連携（承認必須）の開示を行った（理由は CHANGELOG を参照）。
+変更履歴: ロードマップと本文の変更は、理由を添えて [CHANGELOG.md](./CHANGELOG.md) に記録する。直近では 2026年9月に、需要予測（forecast-manifesto）のロードマップ追加、地図章（第 2.5 章）への「二つの観点」の追加、境界章（第 3 章）での判断のタスク連携（承認必須）の開示を行い、SEO 編 v1.2（監査ロジックの正本化と core ライブラリの初公開）を反映した（理由は CHANGELOG を参照）。
 
 成果と撤退に関する判断基準は、別紙の運用基準に記す。ここでは、定期的に読み直し、必要なら Manifesto 本文を微修正するプロセスだけを約束する。
 
@@ -336,6 +338,8 @@ Video pillar (mos-video): v1.0 published (September 2026).
   A "hand-off, zero-marginal-cost pipeline." People hand off the plan, script, and images; validation, audio, subtitles, effects, all-SNS-size export, and delivery run locally. No auto posting (see each repo's `docs/12_why_no_autopost.md` for why). Python. Repository: [mos-video](https://github.com/start-x-work/mos-video).
 Demand forecasting (forecast-manifesto): published, in active development. The second volume in the "design and editing" series.
   An OSS library (Apache-2.0) that publishes the *methods* of demand forecasting and customer lifetime value — NBD time-scaling, maximum-likelihood estimation from frequency distributions, goodness-of-fit tests, and interval estimation — implemented with fixed seeds and zero external dependencies. It makes the method verifiable, not just the result — embodying the "computation-open" type described in Chapter 2.5. Published on npm (`@forecast-manifesto/*`). Repository: [forecast-manifesto](https://github.com/start-x-work/forecast-manifesto).
+SEO pillar v1.2 (N1): published (September 2026).
+  The canonical audit logic now lives on the OSS side. The GEO / LLMO audit ships in `@start-x-work/marketing-os-seo-core` (first published with this release; `./geo` subpath), and the commercial Marketing-OS takes it in as an npm dependency instead of maintaining a copy. The release also adds fetching restricted to public HTTPS (SSRF protection), a search/citation vs. training split of AI crawlers (reviewed quarterly), `Content-Signal` parsing, and an `llms.txt` draft output (advisory, not a command). CLI `@start-x-work/mos-seo` v1.2.0.
 User quickstart: [docs/QUICKSTART.md](./docs/QUICKSTART.md) (CLI, Web BYOK, GSC/Yahoo).
 Operations (BYOK): AI keys, GSC OAuth, and Yahoo tokens are stored in the user’s browser (sessionStorage). No operator-side Cloudflare AI secrets required.
 Agent integration (read-only, MCP): planned (as of July 2026, not yet started).
@@ -347,7 +351,7 @@ Dates are assumptions and may change. Whenever we move ahead or defer, we will e
 
 Where we are (September 2026): the v0.1 scope for the three OSS pillars (SEO / Ads / Social) and the unified CLI is complete. In addition, we published the Creative pillar (mos-creative v0.1, on npm) and the Video pillar (mos-video v1.0). As a separate "design and editing" series (volume two), forecast-manifesto — which publishes the methods for demand forecasting and customer lifetime value — is also published and in active development. Next up: (1) a cross-repository docs site (E3, optional, not started; QUICKSTART docs serve in the meantime), (2) shared web UI extraction across the three pillars (E2, optional), (3) ongoing community operations (weekly metrics, Issues / Discussions), and (4) agent integration on the commercial Marketing-OS side (read-only, MCP; planned, not yet started). All dates remain assumptions and may change.
 
-Change log: roadmap and body changes are recorded with rationale in [CHANGELOG.md](./CHANGELOG.md). Most recently, in September 2026 we added demand forecasting (forecast-manifesto) to the roadmap, added the "Two Lenses" subsection to the Map chapter (2.5), and disclosed the human-approved task handoff in the Boundary chapter (Chapter 3) — see CHANGELOG for the rationale.
+Change log: roadmap and body changes are recorded with rationale in [CHANGELOG.md](./CHANGELOG.md). Most recently, in September 2026 we added demand forecasting (forecast-manifesto) to the roadmap, added the "Two Lenses" subsection to the Map chapter (2.5), disclosed the human-approved task handoff in the Boundary chapter (Chapter 3), and reflected SEO pillar v1.2 (canonical audit logic and the first publish of the core library) — see CHANGELOG for the rationale.
 
 Success and retreat criteria live in operational documentation. Here we only commit to periodic review and small Manifesto edits when feedback warrants them.
 
