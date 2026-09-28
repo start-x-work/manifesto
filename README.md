@@ -96,7 +96,17 @@ For detailed commitments and explicit non-goals, read each category README: [SEO
 
 繰り返すが、四つの型に優劣はない。それぞれが異なる仕事を引き受けており、異なるものを代行し、異なるものを手元に残す。
 
-### 2.5.3 型の組み合わせ
+### 2.5.3 二つの観点
+
+四つの型は「何を代行するか」で分けた。これに、性質を横から見る二つの観点を重ねると、地図はもう少し解像度を持つ。どちらの観点も、優劣を決めるためではなく、「利害や情報がどこに置かれているか」を見えるようにするためのものである。
+
+**媒体を売る型か、売らない型か。** 媒体（広告枠・配信面）の売買と、その効果の測定とが、同じ主体の中にあるかどうかという観点である。両方が同じ場所にあると、測定は正しく行われていても、「何を測り、何を測らないか」という設計に、売り手側の関心が自然と入り込みうる。これは不正という話ではなく、利害が同じ場所にあるときに構造的に見えにくくなるものがある、という話である。売らない型は、測定と媒体販売を切り離すことで、その死角を減らす。
+
+**計算の中身を公開する型か、しないか。** 予測や評価の数式・前提・限界が、利用者から検証できる形で開かれているかどうかという観点である。中身が閉じていると、出力の当否を利用者が確かめる手段は「当たったかどうか」に限られ、なぜそうなるのかを問えない。中身を公開する型は、結果ではなく方法を検証可能にすることで、判断の根拠を利用者の側に残す。
+
+この二つの観点は、四つの型のどれとも独立に効く。同じ観測型でも、媒体を売る主体が提供するか否かで、見えるものは変わる。同じ判断構造化型でも、計算の中身が開かれているか否かで、根拠を辿れる深さが変わる。
+
+### 2.5.4 型の組み合わせ
 
 実務では、単一の型だけでツール構成が完結することはまずない。生成型で素材を作り、実行型で配信し、観測型で計測する——この組み合わせ自体は自然であり、否定すべきものではない。物量と速度の面では、これで多くの業務が回る。
 
@@ -106,17 +116,17 @@ For detailed commitments and explicit non-goals, read each category README: [SEO
 
 これは特定のツールの怠慢ではなく、分業の設計の問題である。だからこそ、責めるべき相手を探すのではなく、設計で埋めるべき欠落として扱うのが正しい。
 
-### 2.5.4 私たちの位置
+### 2.5.5 私たちの位置
 
-この地図の上で、Start-X の OSS 群と商用の Marketing-OS が立つのは、観測型と判断構造化型の領域である。私たちは実行型を作らない。自動投稿・自動入札・自動最適化は、OSS でも商用でも提供しない。
+この地図の上で、Start-X の OSS 群と商用の Marketing-OS が立つのは、観測型と判断構造化型の領域である。私たちは実行型を作らない。自動投稿・自動入札・自動最適化は、OSS でも商用でも提供しない。二つの観点で言えば、私たちは媒体を売らない側に立ち（測定と媒体販売を切り離す）、計算の中身を公開する側に立つ（需要予測の計算方法を OSS として開く——[forecast-manifesto](https://github.com/start-x-work/forecast-manifesto) はその一つである）。
 
 これは実行型を否定する立場ではない。実行は他の型のツールが担い、私たちはその手前と後ろ——診断・評価・優先順位付けと、判断の記録・照合——を担う。スタックの中での共存関係であり、実行型・生成型が強力になるほど、判断を残す層の必要性はむしろ増す。
 
 私たちの提供物をこの地図に置くと、次のようになる。OSS の三本柱（SEO 編・広告編・SNS 編）は、診断・評価・構造化——観測型の入口と判断構造化型の骨格——を、フォーク可能な素材として提供する。商用の Marketing-OS は、その骨格を組織の運用に載せるための統合体験を提供する。どちらの側でも、実行だけは引き受けない。
 
-この位置取りは、第 3 章で述べる境界線と同じ原則から導かれている。OSS は素材と型を提供し、商用は運用と責任の束ね方を提供する。どちらも「意思決定の所在を利用者の側に残す」ために設計されており、実行を代行しないことはその設計上の帰結である。地図の上の位置と、OSS と商用の境界線は、別々の決定ではなく同じ一つの決定の二つの面である。
+この位置取りは、第 3 章で述べる境界線と同じ原則から導かれている。OSS は素材と型を提供し、商用は運用と責任の束ね方を提供する。どちらも「意思決定の所在を利用者の側に残す」ために設計されており、実行を代行しないことはその設計上の帰結である。実行を代行しない一方で、人が承認した判断に限り、それを既存のタスク管理へ「タスク」として渡すことは境界の内側とする（第 3 章）——判断を実行へ手渡す最後の一歩だけを、人の承認を条件に橋渡しする。地図の上の位置と、OSS と商用の境界線は、別々の決定ではなく同じ一つの決定の二つの面である。
 
-### 2.5.5 確かめる問い
+### 2.5.6 確かめる問い
 
 自分たちのツール構成をこの地図に置いてみるために、次の三つの問いを勧める。
 
@@ -154,7 +164,17 @@ There is only one axis of classification: which part of the practice of marketin
 
 Again: no type is superior. Each takes on different work, takes over different things, and leaves different things in your hands.
 
-### 2.5.3 Combining Types
+### 2.5.3 Two Lenses
+
+The four types divide tools by what they take over. Laying two further lenses across them—looking at their nature from the side—gives the map a little more resolution. Neither lens exists to rank; both exist to make visible where interests and information sit.
+
+**Selling the medium, or not.** This lens asks whether the buying and selling of the medium (ad inventory, delivery surfaces) and the measurement of its effect sit inside the same party. When both live in the same place, measurement may be carried out correctly and yet the *design* of what gets measured, and what does not, can quietly take on the seller's interests. This is not a claim of misconduct; it is that when interests share a location, some things become structurally harder to see. A not-selling type reduces that blind spot by separating measurement from the sale of the medium.
+
+**Opening the computation, or not.** This lens asks whether the formulae, assumptions, and limits of a forecast or evaluation are open in a form the user can verify. When the internals are closed, the only way a user can check an output is "did it turn out right"—they cannot ask why. A computation-open type makes the *method*, not just the result, verifiable, keeping the rationale for a judgment on the user's side.
+
+These two lenses act independently of the four types. The same observation-type tool shows different things depending on whether a medium-selling party provides it; the same decision-structuring tool affords a different depth of traceable rationale depending on whether its computation is open.
+
+### 2.5.4 Combining Types
 
 In practice, no stack is complete with a single type. Create with generation, deliver with execution, measure with observation—the combination itself is natural and nothing to reject. For volume and speed, it carries most of the work.
 
@@ -164,17 +184,17 @@ Picture an ordinary week. Monday: you review last week's numbers on an observati
 
 This is not the negligence of any particular tool; it is a property of how the division of labor is designed. Which is why the right response is not to look for someone to blame, but to treat it as a gap to be closed by design.
 
-### 2.5.4 Where We Stand
+### 2.5.5 Where We Stand
 
-On this map, Start-X's open-source tools and the commercial Marketing-OS stand in the territory of observation and decision-structuring. We do not build execution: no auto-posting, no auto-bidding, no auto-optimization—neither in OSS nor commercially.
+On this map, Start-X's open-source tools and the commercial Marketing-OS stand in the territory of observation and decision-structuring. We do not build execution: no auto-posting, no auto-bidding, no auto-optimization—neither in OSS nor commercially. In terms of the two lenses, we stand on the not-selling side (separating measurement from the sale of media) and on the computation-open side (publishing forecasting methods as OSS—[forecast-manifesto](https://github.com/start-x-work/forecast-manifesto) is one such library).
 
 This is not a stance against execution. Other tools execute; we take the ground before and after—diagnosis, evaluation, prioritization, and the recording and cross-checking of decisions. It is a coexistence within the stack: the stronger execution and generation become, the more necessary the layer that retains judgment.
 
 Placed on the map, our offerings look like this. The three OSS pillars (SEO, Ads, Social) provide diagnosis, evaluation, and structuring—the entry point of observation and the skeleton of decision-structuring—as forkable material. Commercial Marketing-OS provides the integrated experience for running that skeleton at organizational scale. On neither side do we take on execution.
 
-This position follows from the same principle as the boundary in Chapter 3. Open source offers material and patterns; commercial offers how operations and accountability are bundled. Both are designed to keep ownership of decisions on the user's side, and not executing on your behalf is a consequence of that design. Our place on the map and the OSS–commercial boundary are not separate decisions; they are two faces of the same one.
+This position follows from the same principle as the boundary in Chapter 3. Open source offers material and patterns; commercial offers how operations and accountability are bundled. Both are designed to keep ownership of decisions on the user's side, and not executing on your behalf is a consequence of that design. While we do not execute on your behalf, handing a human-approved decision to an existing task manager as a "task" is inside the boundary (Chapter 3)—bridging only the last step from decision to execution, and only on human approval. Our place on the map and the OSS–commercial boundary are not separate decisions; they are two faces of the same one.
 
-### 2.5.5 Questions to Ask
+### 2.5.6 Questions to Ask
 
 To place your own stack on this map, we suggest three questions.
 
@@ -196,6 +216,8 @@ OSS で提供するものは、再利用可能な部品、診断、テンプレ�
 
 AI CMO は「実行しない頭脳」として設計される。診断・評価・優先順位付け・ブリーフまでを担い、自動投稿・自動入稿・自動最適化のような自律実行は行わない。実際の実行は利用者自身が担うか、委ねたい場合に限り BPO（人の手）が引き受ける。自動実行をしないことは制約ではなく、意思決定の所在を利用者側に残すための設計上の選択である。
 
+この境界には、2026年9月の見直しで、限定的な一点を明示した。実行を代行しないという原則は保ちつつ、**人が承認した判断に限って、その判断を既存のタスク管理（チャットや課題管理）へ「タスク」として渡す**ことは、境界の内側とする。渡すのは「やることの記録」であって、媒体そのものの操作ではない。**広告・MA・CRM のデータや設定を書き換えることは、承認の有無にかかわらず恒久的に行わない**。媒体に対して中立である（売らない・動かさない）という立場は変えない。以前の記述では書き戻しを一切扱わなかったが、判断と実行の間に生じる手作業の断絶——決めたことが引き継ぎの隙間で失われること——を減らすために、承認済みの判断の受け渡しだけを、境界の内側として明示した。境界を見直したこと自体と、その理由・日付は、透明性原則に従って [CHANGELOG.md](./CHANGELOG.md) に記す。
+
 AI CMO のプランは **LIGHT / STANDARD / GROWTH / PRO** の 4 階層で固定されている。ここで肝心なのは、使える機能の「形」を決めるのはプランではなくビジネスタイプ（現在 9 種）だという点である。プランが変えるのはクォータ（利用量の上限）であって、機能の種類ではない。上位プランへ移っても「別の頭脳」に切り替わるのではなく、同じ頭脳をより多く使えるようになる。
 
 つまり、OSS は「素材と型」、商用は「運用と責任の束ね方」という住み分けである。
@@ -211,6 +233,8 @@ Open source supplies reusable parts, diagnostics, templates, CLIs and libraries,
 Commercial Marketing-OS supplies the integrated experience of a decision OS through two parallel offerings—neither one a tier of the other. The first is **AI CMO**, a self-serve SaaS that supports marketing decisions. The second is **BPO**, where people carry out execution on your behalf. BPO is not a higher plan of AI CMO; it is a separate axis of engagement.
 
 AI CMO is designed as a "brain that does not execute." It handles diagnosis, evaluation, prioritization, and briefs, but performs no autonomous execution—no auto-posting, auto-uploading, or auto-optimization. Actual execution stays with the user, or, only when delegated, is taken on by BPO (human hands). Not executing is not a limitation; it is a deliberate design choice that keeps ownership of decisions on the user's side.
+
+In a September 2026 review we made one limited point explicit. While preserving the principle of not executing on your behalf, we place inside the boundary the following: **for human-approved decisions only, handing that decision to an existing task manager (chat or issue tracker) as a "task."** What is handed over is a record of something to do—not an operation on the medium itself. **Changing data or settings in ad, MA, or CRM systems remains permanently out of bounds, approved or not.** Our stance of medium-neutrality—neither selling nor operating media—does not change. Earlier wording did not address write-backs at all; to reduce the manual gap between deciding and doing—where a decision gets lost in the handoff—we placed only the handoff of an already-approved decision inside the boundary. Per the transparency principle, the fact of this boundary revision, with its rationale and date, is recorded in [CHANGELOG.md](./CHANGELOG.md).
 
 AI CMO plans are fixed at four tiers: **LIGHT / STANDARD / GROWTH / PRO**. The key point is that the *shape* of available features is determined by business type (currently nine), not by plan. Plans change quotas (usage ceilings), not the kinds of features. Moving to a higher plan does not swap in "a different brain"; it lets you use the same brain more.
 
@@ -265,6 +289,12 @@ Phase 7(SNS 編 v0.1):完了(2026年6月、前倒し)。
 統合 CLI(N9):完了(2026年6月)。
   `@start-x-work/marketing-os` v0.1.1 — SEO / 広告 / SNS を `marketing-os <pillar> <command>` で束ねる。
   実装リポ: [marketing-os](https://github.com/start-x-work/marketing-os)。
+クリエイティブ編(mos-creative):v0.1 公開(2026年9月)。
+  ブリーフ→生成→表現ガード→人の承認証跡までをローカルで支援する。ローカルファースト・下書き優先で、最終判断は人に残す。実装リポ: [mos-creative](https://github.com/start-x-work/mos-creative)。npm 公開済み(`@start-x-work/mos-creative`)。
+動画編(mos-video):v1.0 公開(2026年9月)。
+  「手渡し0円パイプライン」。企画・台本・画像は人が手渡し、検証・音声・字幕・演出・全SNSサイズ書き出し・納品をローカルで処理する。自動投稿はしない(理由は各リポの `docs/12_why_no_autopost.md`)。Python 実装。実装リポ: [mos-video](https://github.com/start-x-work/mos-video)。
+需要予測(forecast-manifesto):公開済み・継続開発。「設計と編集」シリーズ第2弾。
+  需要予測・顧客生涯価値の「計算方法」を公開する OSS(Apache-2.0)。NBD の時間換算・度数分布からの最尤推定・適合度検定・区間推定などを、シード固定・外部依存ゼロで実装する。結果ではなく方法を検証可能にする——第 2.5 章でいう「計算の中身を公開する型」を体現する。npm 公開済み(`@forecast-manifesto/*`)。実装リポ: [forecast-manifesto](https://github.com/start-x-work/forecast-manifesto)。
 利用者向けクイックスタート: [docs/QUICKSTART.md](./docs/QUICKSTART.md)（CLI・Web BYOK・GSC/Yahoo 連携手順）。
 運用設計(BYOK): 各 Web UI の AI API キー・GSC OAuth・Yahoo トークンは利用者がブラウザに保存（sessionStorage）。運営側の Cloudflare AI Secrets は不要。
 エージェント連携(read専用・MCP):計画中(2026年7月時点、着手前)。
@@ -274,9 +304,9 @@ Phase 7(SNS 編 v0.1):完了(2026年6月、前倒し)。
 
 日程は前提であり変更されうる。前倒し・後ろ倒しいずれの場合も、判断の理由をこのロードマップ上で明示する。今回 Phase 3・4 を前倒しできたのは、SEO 編の実装が想定より順調に進んだためである。Phase 5〜7 と統合 CLI も同じ理由——共通基盤（mos-kit）の抽出と実装の並列化により、各編が SEO 編の土台を再利用できたこと——で前倒しとなった。
 
-現在地（2026年7月）: OSS 三本柱と統合 CLI の v0.1 スコープは完了。次フェーズは、(1) 横断 docs サイト（E3・任意・未着手。現状は QUICKSTART 群で代替）、(2) 三編 Web の共通 UI 抽出（E2・任意）、(3) コミュニティ運用の継続（metrics 週次記録・Issue / Discussion 対応）、(4) 商用 Marketing-OS 側でのエージェント連携（read専用・MCP、計画中・着手前）である。いずれも日程は前提であり変更されうる。
+現在地（2026年9月）: OSS 三本柱（SEO / 広告 / SNS）と統合 CLI の v0.1 スコープは完了済み。加えて、クリエイティブ編（mos-creative v0.1・npm 公開済み）と動画編（mos-video v1.0・公開）を新たに公開した。別系統の「設計と編集」シリーズ第2弾として、需要予測・顧客生涯価値の計算方法を公開する forecast-manifesto も公開・継続開発中である。次フェーズは、(1) 横断 docs サイト（E3・任意・未着手。現状は QUICKSTART 群で代替）、(2) 三編 Web の共通 UI 抽出（E2・任意）、(3) コミュニティ運用の継続（metrics 週次記録・Issue / Discussion 対応）、(4) 商用 Marketing-OS 側でのエージェント連携（read専用・MCP、計画中・着手前）である。いずれも日程は前提であり変更されうる。
 
-変更履歴: ロードマップと本文の変更は、理由を添えて [CHANGELOG.md](./CHANGELOG.md) に記録する。直近では 2026年7月4日に第 2.5 章「マーケAIの地図」を追加した（理由は CHANGELOG を参照）。
+変更履歴: ロードマップと本文の変更は、理由を添えて [CHANGELOG.md](./CHANGELOG.md) に記録する。直近では 2026年9月に、需要予測（forecast-manifesto）のロードマップ追加、地図章（第 2.5 章）への「二つの観点」の追加、境界章（第 3 章）での判断のタスク連携（承認必須）の開示を行った（理由は CHANGELOG を参照）。
 
 成果と撤退に関する判断基準は、別紙の運用基準に記す。ここでは、定期的に読み直し、必要なら Manifesto 本文を微修正するプロセスだけを約束する。
 
@@ -300,6 +330,12 @@ Phase 7 (Social pillar v0.1): complete (June 2026, ahead of schedule).
 Unified CLI (N9): complete (June 2026).
   `@start-x-work/marketing-os` v0.1.1 — `marketing-os <pillar> <command>` across SEO, Ads, and Social.
   Repository: [marketing-os](https://github.com/start-x-work/marketing-os).
+Creative pillar (mos-creative): v0.1 code published (September 2026).
+  Supports brief → generation → expression guard → human approval trail, locally. Local-first, draft-first; the final call stays with a person. Repository: [mos-creative](https://github.com/start-x-work/mos-creative). Published on npm (`@start-x-work/mos-creative`).
+Video pillar (mos-video): v1.0 published (September 2026).
+  A "hand-off, zero-marginal-cost pipeline." People hand off the plan, script, and images; validation, audio, subtitles, effects, all-SNS-size export, and delivery run locally. No auto posting (see each repo's `docs/12_why_no_autopost.md` for why). Python. Repository: [mos-video](https://github.com/start-x-work/mos-video).
+Demand forecasting (forecast-manifesto): published, in active development. The second volume in the "design and editing" series.
+  An OSS library (Apache-2.0) that publishes the *methods* of demand forecasting and customer lifetime value — NBD time-scaling, maximum-likelihood estimation from frequency distributions, goodness-of-fit tests, and interval estimation — implemented with fixed seeds and zero external dependencies. It makes the method verifiable, not just the result — embodying the "computation-open" type described in Chapter 2.5. Published on npm (`@forecast-manifesto/*`). Repository: [forecast-manifesto](https://github.com/start-x-work/forecast-manifesto).
 User quickstart: [docs/QUICKSTART.md](./docs/QUICKSTART.md) (CLI, Web BYOK, GSC/Yahoo).
 Operations (BYOK): AI keys, GSC OAuth, and Yahoo tokens are stored in the user’s browser (sessionStorage). No operator-side Cloudflare AI secrets required.
 Agent integration (read-only, MCP): planned (as of July 2026, not yet started).
@@ -309,9 +345,9 @@ For gates and finer-grained tracking, see the [Start-X OSS Master Roadmap v3.0](
 
 Dates are assumptions and may change. Whenever we move ahead or defer, we will explain the rationale here. Phase 3 and 4 shipped early because SEO implementation progressed faster than expected. Phases 5–7 and the unified CLI shipped early for the same reason: extracting the shared foundation (mos-kit) and parallelizing implementation let each pillar reuse the SEO groundwork.
 
-Where we are (July 2026): the v0.1 scope for the three OSS pillars and the unified CLI is complete. Next up: (1) a cross-repository docs site (E3, optional, not started; QUICKSTART docs serve in the meantime), (2) shared web UI extraction across the three pillars (E2, optional), (3) ongoing community operations (weekly metrics, Issues / Discussions), and (4) agent integration on the commercial Marketing-OS side (read-only, MCP; planned, not yet started). All dates remain assumptions and may change.
+Where we are (September 2026): the v0.1 scope for the three OSS pillars (SEO / Ads / Social) and the unified CLI is complete. In addition, we published the Creative pillar (mos-creative v0.1, on npm) and the Video pillar (mos-video v1.0). As a separate "design and editing" series (volume two), forecast-manifesto — which publishes the methods for demand forecasting and customer lifetime value — is also published and in active development. Next up: (1) a cross-repository docs site (E3, optional, not started; QUICKSTART docs serve in the meantime), (2) shared web UI extraction across the three pillars (E2, optional), (3) ongoing community operations (weekly metrics, Issues / Discussions), and (4) agent integration on the commercial Marketing-OS side (read-only, MCP; planned, not yet started). All dates remain assumptions and may change.
 
-Change log: roadmap and body changes are recorded with rationale in [CHANGELOG.md](./CHANGELOG.md). Most recently, Chapter 2.5 "The Map of AI Marketing" was added on July 4, 2026 (see CHANGELOG for the rationale).
+Change log: roadmap and body changes are recorded with rationale in [CHANGELOG.md](./CHANGELOG.md). Most recently, in September 2026 we added demand forecasting (forecast-manifesto) to the roadmap, added the "Two Lenses" subsection to the Map chapter (2.5), and disclosed the human-approved task handoff in the Boundary chapter (Chapter 3) — see CHANGELOG for the rationale.
 
 Success and retreat criteria live in operational documentation. Here we only commit to periodic review and small Manifesto edits when feedback warrants them.
 

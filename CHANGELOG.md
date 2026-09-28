@@ -6,6 +6,24 @@ This file records notable changes to the Manifesto repository. Per the transpare
 
 ---
 
+## 2026-09-27（manifesto 実装指示書 v1.1：M1・M2・M3）
+
+- **M1（ロードマップ実態同期）** ロードマップ（第 5 章・日英）に需要予測 `forecast-manifesto` を「設計と編集」シリーズ第2弾として追加（公開済み・継続開発、`@forecast-manifesto/*`、Apache-2.0、外部依存ゼロ・シード固定の計算方法を公開）。「現在地」にも追記。理由: 実態（npm 公開・継続開発）をロードマップに反映するため（透明性原則）。SEO v1.0・read専用 MCP・広告/SNS の記述は現状のまま（実態と一致）。
+  - **M1 (roadmap actual-state sync).** Added demand forecasting `forecast-manifesto` to the Roadmap (Ch. 5, JP/EN) as volume two of the "design and editing" series (published, in active development; `@forecast-manifesto/*`, Apache-2.0; zero-dependency, fixed-seed methods). Also noted in "where we are." Rationale: reflect the actual published state on the roadmap (transparency principle).
+- **M2（地図章 2.5 の改訂）** 第 2.5 章に新節 **2.5.3「二つの観点 / Two Lenses」** を追加（媒体を売る型／売らない型、計算の中身を公開する型／しない型）。以降の節を繰り下げ（型の組み合わせ→2.5.4、私たちの位置→2.5.5、確かめる問い→2.5.6）。「私たちの位置」に、媒体を売らない側・計算を公開する側に立つこと、および承認済み判断のタスク受け渡し（第 3 章への橋）を追記。理由: 差別化の再定義（利害と情報の所在を構造として示す）。固有名・比較・数値主張は入れず、他の型への優劣断定もしない。
+  - **M2 (Map chapter 2.5 revision).** Added a new **2.5.3 "Two Lenses"** subsection (selling-the-medium vs not; computation-open vs not), renumbering the rest (Combining Types → 2.5.4, Where We Stand → 2.5.5, Questions → 2.5.6). "Where We Stand" now states our not-selling / computation-open position and bridges to the Chapter-3 task-handoff. Rationale: restate differentiation as a structure (where interests and information sit); no service names, comparisons, numeric claims, or superiority judgments.
+- **M3（境界章の改訂・D-13 の開示）** 第 3 章に、承認済みの判断に限り既存のタスク管理（チャット・課題管理）へ「タスク」として渡すことを境界の内側として明示。**広告・MA・CRM のデータ／設定の書き換えは承認の有無にかかわらず恒久的に行わない**旨を明記。改訂前は書き戻しを一切扱っていなかった旨も本文に残した。理由: 判断と実行の間の手作業の断絶を減らしつつ媒体中立を保つ（境界の変更のため、透明性原則により開示が必須）。注記: この境界に対応する実装（商用側のタスク連携）は今後のフェーズであり、本改訂は決定済みの境界を透明性原則に基づいて開示するもので、未実装機能の宣伝ではない。
+  - **M3 (Boundary chapter revision — disclosing D-13).** Chapter 3 now states that, for human-approved decisions only, handing a decision to an existing task manager (chat / issue tracker) as a "task" is inside the boundary, while **changing data or settings in ad, MA, or CRM systems remains permanently out of bounds, approved or not.** The text preserves that earlier wording did not address write-backs. Rationale: reduce the manual gap between deciding and executing while keeping medium-neutrality; a boundary change must be disclosed per the transparency principle. Note: the implementation corresponding to this boundary is a later phase; this revision discloses a *decided boundary* per the transparency principle and is not the advertising of an unbuilt feature.
+
+## 2026-09-13
+
+- ロードマップ（第 5 章・日英）に、クリエイティブ編（`mos-creative` v0.1・コード公開）と動画編（`mos-video` v1.0・公開）を新ノードとして追加。「現在地」を 2026年9月に更新し、次フェーズに「mos-creative の npm 公開」を追記。理由: 両リポジトリを 2026 年 9 月に公開したため、透明性原則（第 4 章）に基づき公開ロードマップへ反映する。
+  - Added the Creative pillar (`mos-creative` v0.1, code public) and the Video pillar (`mos-video` v1.0, published) as new nodes in the Roadmap (Ch. 5, JP and EN). Updated "where we are" to September 2026 and added "npm publish of mos-creative" to the next phases. Rationale: both repositories were published in September 2026; per the transparency principle (Ch. 4), we record them on the public roadmap.
+  - 明記した点: `mos-creative` は現時点でコード公開のみ（npm 公開は準備中）、`mos-video` は自動投稿を持たない設計（実行系を追加しない境界＝各リポの `docs/12_why_no_autopost.md`）。実態に反する完了・自動化表現は用いていない。
+  - Noted explicitly: `mos-video` has no auto-posting by design (the boundary of not adding an execution layer — see each repo's `docs/12_why_no_autopost.md`). We avoid completion or automation claims that would misrepresent the actual state.
+- `mos-creative` を npm 公開（`@start-x-work/mos-creative@0.1.0`, Apache-2.0）。ロードマップ・本文の「npm 準備中／コード公開のみ」表記を「npm 公開済み」に更新し、次フェーズ一覧から「mos-creative の npm 公開」を削除。理由: 実際に公開が完了したため、表記を実態に合わせる。
+  - Published `mos-creative` to npm (`@start-x-work/mos-creative@0.1.0`, Apache-2.0). Updated the roadmap/body wording from "npm pending / code-public only" to "published on npm" and dropped "npm publish of mos-creative" from the next-phase list. Rationale: the publish is now done, so the wording is brought in line with reality.
+
 ## 2026-07-09
 
 - ロードマップ（第 5 章）と `master_roadmap_v3.md` に「エージェント連携（read専用・MCP）」を次フェーズの計画中ノードとして追加。理由: 商用 Marketing-OS 側で MCP サーバー実装（OAuth 2.1 + PKCE・readOnly-first・書き込みツールを型レベルで定義しない設計）が次の実装対象として起票されたため、着手前の段階から公開ロードマップに記載する（透明性原則）。
