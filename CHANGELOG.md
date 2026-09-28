@@ -14,6 +14,11 @@ This file records notable changes to the Manifesto repository. Per the transpare
 - Added the status of the commercial-side adoption (N1-4) to "SEO pillar v1.2 (N1)" in the Roadmap (Ch. 5, JP/EN). The change that replaces the commercial Marketing-OS's copy of the audit logic with an npm dependency on `@start-x-work/marketing-os-seo-core`'s `./geo` (pinned at 1.2.0) has been merged into the development branch. Rationale: per the transparency principle, show the stage at which the audit logic canonicalized on the OSS side is actually being used by the commercial product (manifesto spec M1).
   - Noted explicitly: it has **not yet reached production**, so we do not describe it as available or live; we will record the production date separately when it ships. The commercial repository is private, so no PR numbers or links are included. The earlier same-day note saying N1-4 was "in progress" is kept as the record at that time.
 
+## 2026-09-28（公開形態一覧の SEO v1.2 同期）
+
+- `docs/SERVICE_STRUCTURE.md` の SEO 編を `@start-x-work/mos-seo` 1.2.0 に更新し、共通基盤の表に `@start-x-work/marketing-os-seo-core` 1.2.0（監査ロジックのライブラリ）を追加。理由：SEO 編 v1.2 の反映（同日）で README と CHANGELOG は更新したが、この一覧だけ 1.1.1 のまま残っており、公開状態と一致していなかったため（manifesto 指示書 M1）。
+  - Updated the SEO row in `docs/SERVICE_STRUCTURE.md` to `@start-x-work/mos-seo` 1.2.0 and added `@start-x-work/marketing-os-seo-core` 1.2.0 (the audit-logic library) to the shared-foundation table. Rationale: the same-day SEO v1.2 sync updated the README and CHANGELOG but left this list at 1.1.1, so it no longer matched the published state (manifesto spec M1).
+
 ## 2026-09-28（SEO 編 v1.2 の反映）
 
 - ロードマップ（第 5 章・日英）に「SEO 編 v1.2（N1）」を追加。理由：`@start-x-work/mos-seo` 1.2.0 と `@start-x-work/marketing-os-seo-core` 1.2.0（ライブラリの初公開）を npm に公開し、公開状態とロードマップを一致させるため（manifesto 指示書 M1、marketing-os-seo 指示書 N1-5）。

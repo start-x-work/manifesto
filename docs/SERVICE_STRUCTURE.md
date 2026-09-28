@@ -8,12 +8,13 @@ Marketing-OS OSS の公開形態を、利用者向けに整理した一覧です
 |---|---|---|
 | `@start-x-work/mos-kit` | 0.1.0 | AI 抽象層、errors、ReadOnlyPlatform、COMMERCIAL_HINT |
 | `@start-x-work/marketing-os` | 0.1.1 | 統合 CLI（`marketing-os seo|ads|social`） |
+| `@start-x-work/marketing-os-seo-core` | 1.2.0 | SEO 編の監査ロジック（ライブラリ。GEO／LLMO 監査は `./geo` サブパス） |
 
 ## 三本柱
 
 | 編 | CLI (npm) | Web UI | 主な機能 |
 |---|---|---|---|
-| SEO | `@start-x-work/mos-seo` 1.1.1 | [marketing-os-seo.pages.dev](https://marketing-os-seo.pages.dev) | LLMO/サイト診断、ブリーフ、キーワードマップ |
+| SEO | `@start-x-work/mos-seo` 1.2.0 | [marketing-os-seo.pages.dev](https://marketing-os-seo.pages.dev) | LLMO/サイト診断、ブリーフ、キーワードマップ、`llms.txt` の草案出力 |
 | Ads | `@start-x-work/mos-ads` 0.1.2 | [marketing-os-ads.pages.dev](https://marketing-os-ads.pages.dev) | 構造診断、クリエイティブ評価、Yahoo 読み取り |
 | Social | `@start-x-work/mos-social` 0.1.1 | [marketing-os-social.pages.dev](https://marketing-os-social.pages.dev) | 投稿評価、カレンダー診断、アカウント診断 |
 
