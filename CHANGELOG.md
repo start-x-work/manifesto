@@ -6,6 +6,14 @@ This file records notable changes to the Manifesto repository. Per the transpare
 
 ---
 
+## 2026-09-28（需要予測 forecast-manifesto の新しい版）
+
+- ロードマップ（第 5 章・日英）の需要予測（forecast-manifesto）の項目に、2026-09-28 に npm で公開した版の内容を追記した。理由：公開状態とロードマップを一致させるため（manifesto 指示書 M1）。
+  - 公開した版：`@forecast-manifesto/solver` 0.7.0・`clv` 0.5.0・`validate` 0.4.0・`cli` 0.3.0・`dirichlet` 0.3.0、新規の `memory` 0.1.0・`price` 0.1.0（`sbg` 0.3.0 は据え置き）。
+  - 追加した内容：顧客生涯価値の区間推定（コホート単位）、リーチ・接触回数の試算（区間つき）、増分効果（リフト・iROAS とその区間）、重複購買の当てはまり診断、記憶（心的シェアなど）と価格（価格感度調査の4つの価格点など）の2パッケージ。
+  - 明記した点：業界別の係数・ベンチマーク・既定値は同梱していない（非公開層）。本文では、人名に由来する手法名を一般的な言い方に置き換えた（固有名の一般化原則）。正式な手法名と一次文献は、forecast-manifesto の各章に記載している。
+- Added the contents of the release published on npm on 2026-09-28 to the demand-forecasting (forecast-manifesto) entry in the Roadmap (Ch. 5, JP/EN). Rationale: keep the roadmap in line with the published state (manifesto spec M1). Released: solver 0.7.0, clv 0.5.0, validate 0.4.0, cli 0.3.0, dirichlet 0.3.0, and the new memory 0.1.0 and price 0.1.0 (sbg unchanged at 0.3.0). Industry coefficients, benchmarks, and default values are not bundled. Method names derived from personal names are described generically in the body, per the generalization principle; the formal names and primary sources are in each forecast-manifesto chapter.
+
 ## 2026-09-28（N1：商用側での取り込み・開発ブランチまで）
 
 - ロードマップ（第 5 章・日英）の「SEO 編 v1.2（N1）」に、商用 Marketing-OS 側の取り込み（N1-4）の状況を追記した。監査ロジックの複製を、`@start-x-work/marketing-os-seo-core` の `./geo`（版は 1.2.0 に固定）への npm 依存に置き換える変更が、開発ブランチまで統合された。理由：OSS 側で正本化した監査ロジックが、商用側で実際に使われ始めた段階を、透明性原則に基づいて示すため（manifesto 指示書 M1）。
