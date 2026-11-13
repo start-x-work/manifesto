@@ -22,17 +22,19 @@
 | `phase1_completion_v1.md` | Phase 1 残タスク | ✓ 完了 |
 | `phase3_seo_cli_finalize_v1.md` | Phase 3 仕上げ | ✓ 完了 |
 | `phase4_seo_web_impl_v1.md` | Phase 4(Web UI) | ✓ 完了 |
-| [`phase5_ads_prep_seo_v1.md`](./phase5_ads_prep_seo_v1.md) | Phase 5(広告準備+SEO v1.0) | ◐ SEO v1.0完了・広告準備完了 |
-| [`phase6_ads_impl_v1.md`](./phase6_ads_impl_v1.md) | Phase 6(広告 v0.1) | ✓ 完了 |
-| [`phase7_social_impl_v1.md`](./phase7_social_impl_v1.md) | Phase 7(SNS v0.1) | ✓ 完了 |
-| [`implementation_blueprint_v2.md`](./implementation_blueprint_v2.md) | Phase 3〜統合CLI/商用連携 | 実装ブループリント |
-| [`remaining_nodes_completion_v1.md`](./remaining_nodes_completion_v1.md) | N4/N7/N8/N9/N10 詳細 | 独立詳細指示書 |
-| [`n0_execution_runbook_v1.md`](./n0_execution_runbook_v1.md) | 環境準備〜N0(SEO CLI公開) | 実行手順書 |
-| [`next_phase_manifesto_sync_n1_v1.md`](./next_phase_manifesto_sync_n1_v1.md) | Task A(manifesto同期) + Task B(N1 SEO v1.0) | 完了 |
-| [`next_phase_manifesto_sync_n2_v1.md`](./next_phase_manifesto_sync_n2_v1.md) | Task A(manifesto同期) + Task B(N10/QUICKSTART) | 次フェーズ指示書 |
+| `phase5_ads_prep_seo_v1.md` | Phase 5(広告準備+SEO v1.0) | ◐ SEO v1.0完了・広告準備完了 |
+| `phase6_ads_impl_v1.md` | Phase 6(広告 v0.1) | ✓ 完了 |
+| `phase7_social_impl_v1.md` | Phase 7(SNS v0.1) | ✓ 完了 |
+| `implementation_blueprint_v2.md` | Phase 3〜統合CLI/商用連携 | 実装ブループリント |
+| `remaining_nodes_completion_v1.md` | N4/N7/N8/N9/N10 詳細 | 独立詳細指示書 |
+| `n0_execution_runbook_v1.md` | 環境準備〜N0(SEO CLI公開) | 実行手順書 |
+| `next_phase_manifesto_sync_n1_v1.md` | Task A(manifesto同期) + Task B(N1 SEO v1.0) | 完了 |
+| `next_phase_manifesto_sync_n2_v1.md` | Task A(manifesto同期) + Task B(N10/QUICKSTART) | 次フェーズ指示書 |
 | [`CHANGELOG.md`](./CHANGELOG.md) | Manifesto 本文・ロードマップの変更履歴(理由付き) | 運用中 |
 | `README.md` 第2.5章「マーケAIの地図」 | マーケAIツールの分類学(名前なし・4つの型) | ✓ 追加(2026年7月) |
 | **`master_roadmap_v3.md`(本書)** | 全体索引・進捗 | — |
+
+リンクの無い指示書は、作業用の資料として非公開で管理している（[CHANGELOG](./CHANGELOG.md) 2026-11-13）。
 
 ---
 
@@ -105,8 +107,8 @@
 
 | スプリント | 内容 | 並行可否 | 指示書 |
 |---|---|---|---|
-| **完了** | N9 統合CLI / npm 一括公開 / BYOK / QUICKSTART | — | [n2](./next_phase_manifesto_sync_n2_v1.md) |
-| **任意** | E3 横断 docs サイト | 3 編完成後 | [Part E](./remaining_nodes_completion_v1.md) |
+| **完了** | N9 統合CLI / npm 一括公開 / BYOK / QUICKSTART | — | n2 |
+| **任意** | E3 横断 docs サイト | 3 編完成後 | Part E |
 
 ### 並行実行の指針
 
@@ -217,8 +219,8 @@
 |---|---|---|
 | Phase 3公開 | phase3_finalize | Section 7のプロンプト |
 | Phase 4実装 | phase4_web | Section 9のプロンプト |
-| Phase 5実装 | [phase5](./phase5_ads_prep_seo_v1.md) | Section 6のプロンプト |
-| Phase 6実装 | [phase6](./phase6_ads_impl_v1.md) | Section 7のプロンプト |
+| Phase 5実装 | phase5 | Section 6のプロンプト |
+| Phase 6実装 | phase6 | Section 7のプロンプト |
 
 各指示書は独立して Cursor Agent に渡せる。本書(master)は全体の進捗管理用。
 

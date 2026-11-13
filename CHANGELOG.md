@@ -6,6 +6,14 @@ This file records notable changes to the Manifesto repository. Per the transpare
 
 ---
 
+## 2026-11-13（作業用の資料を非公開へ移す）
+
+- 実装と作業手順のための資料9本を、このリポジトリから非公開のリポジトリへ移した。移したファイル：`implementation_blueprint_v2.md`・`implementation_master_v1.md`・`n0_execution_runbook_v1.md`・`remaining_nodes_completion_v1.md`・`next_phase_manifesto_sync_n1_v1.md`・`next_phase_manifesto_sync_n2_v1.md`・`phase5_ads_prep_seo_v1.md`・`phase6_ads_impl_v1.md`・`phase7_social_impl_v1.md`。理由：作業用の資料は非公開で管理する。公開のロードマップ（`master_roadmap_v3.md`）は残す。
+  - README の関連文書から3本へのリンクを外し、ロードマップの中のリンクはファイル名だけの表記に改めた（ほかの非公開の指示書と同じ書き方）。ロードマップへの案内はそのまま残した。
+  - 中身は一字も変えずに移した。履歴は書き換えていないため、過去の版からは読める。
+- Moved nine working documents for implementation and task procedures out of this repository into a private repository: `implementation_blueprint_v2.md`, `implementation_master_v1.md`, `n0_execution_runbook_v1.md`, `remaining_nodes_completion_v1.md`, `next_phase_manifesto_sync_n1_v1.md`, `next_phase_manifesto_sync_n2_v1.md`, `phase5_ads_prep_seo_v1.md`, `phase6_ads_impl_v1.md`, and `phase7_social_impl_v1.md`. Rationale: working documents are managed privately, while the public roadmap (`master_roadmap_v3.md`) stays here.
+  - Removed the links to three of them from the README's related documents, and changed the links in the roadmap to plain file names (the same style as the other private specs). The pointer to the roadmap is unchanged. The files were moved without edits, and history was not rewritten, so earlier versions remain readable.
+
 ## 2026-09-28（需要予測 forecast-manifesto の新しい版）
 
 - ロードマップ（第 5 章・日英）の需要予測（forecast-manifesto）の項目に、2026-09-28 に npm で公開した版の内容を追記した。理由：公開状態とロードマップを一致させるため（manifesto 指示書 M1）。
